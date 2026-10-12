@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better</title>
+  <link rel="shortcut icon" href="../images/better_favicon.png" type="image/x-icon">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+  <script src="../css/header.js"></script>
+  <script src="./css/sub.js"></script>
+  <link rel="stylesheet" href="./css/sub.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Fugaz+One&display=swap" rel="stylesheet">
+
+
+
+
+  <style>
+    * {margin: 0; padding: 0;}
+    li {list-style: none;}
+    a {color: black; text-decoration: none;}
+    
+  </style>
+</head>
+<body>
+  <div class="fix">
+    <input type="checkbox" id="banner_close">
+    <div class="top_banner">신규 회원 가입 시 10,000원 쿠폰팩 증정
+    </div><!--top_banner-->
+
+    <header class="header_outer">
+      <div class="header">
+        <div class="logo_gnb">
+          <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="브랜드 로고 이미지"></a></div>
+          <ul class="gnb">
+            <li class="gnb_menu01"><a href="#!">Product</a></li>
+            <li><a href="#!">For You</a></li>
+            <li><a href="#!">Event</a></li>
+            <li><a href="#!">Best</a></li>
+            <li><a href="#!">Review</a></li>
+            <li><a href="#!">Brand</a></li>
+          </ul>
+        </div>
+        <div class="back"><a href="../index.html"><img src="../images/header_arrow.png" alt="arrow_img"></a></div>
+        <div class="title">스킨케어</div>
+        <div class="header_right">
+          <div class="search">
+            <p>롬앤 베러 댄 치크 #글레이즈</p>
+            <img src="../images/search_icon.png" alt="검색 아이콘">
+          </div>
+          <div class="search_mobile">
+            <img src="../images/search_mobile.png" alt="검색 아이콘">
+          </div>
+          <div class="user"><a href="../login/login.html">
+            <div class="user_img"></div>
+            <div class="join_event_box">
+              <div class="join_event"><a href="../login/login.html">회원가입 특별혜택</a></div>
+            </div></a>
+          </div>
+          <div class="shopping"><a href="./cart.html"></a></div>
+        </div><!--header_right-->   
+      </div>
+      <div class="gnb_down_menu">
+        <div class="down_menu_box">
+          <div class="gnb_title">
+            <div class="on_tab">스킨케어</div>
+            <div>메이크업</div>
+          </div>
+          <div class="menu_list_box">
+            <div class="menu_list on_sheet">
+              <div class="type_list">
+                <ul class="type"><a href="#!">유형별</a>
+                  <li><a href="#!">토너</a></li>
+                  <li><a href="#!">세럼/앰플</a></li>
+                  <li><a href="#!">로션/크림</a></li>
+                  <li><a href="#!">마스크팩</a></li>
+                  <li><a href="#!">클렌징/스크럽</a></li>
+                  <li><a href="#!">선케어</a></li>
+                </ul>
+                <ul class="worry"><a href="#!">피부고민별</a>
+                  <li><a href="#!">모공/피부결</a></li>
+                  <li><a href="#!">민감/진정</a></li>
+                  <li><a href="#!">수분/보습</a></li>
+                  <li><a href="#!">트러블/피지</a></li>
+                  <li><a href="#!">주름/탄력</a></li>
+                  <li><a href="#!">잡티/톤</a></li>
+                </ul>
+                <ul class="skintype"><a href="#!">피부타입별</a>
+                  <li><a href="#!">지성</a></li>
+                  <li><a href="#!">건성</a></li>
+                  <li><a href="#!">복합성</a></li>
+                  <li><a href="#!">민감피부</a></li>
+                </ul>
+              </div>
+              <div class="today_product">
+                <div class="today_img before01"><a href="#!"><img src="../images/menu_01.jpg" alt="이달의 상품 이미지"></a></div>
+                <div class="today_text">
+                  <span>#딥클렌징 #수분케어</span>
+                  <a href="#!"><p>원더 살구씨 딥 클렌징 오일</p></a>
+                  <span>20%</span>
+                  <span>12,000원</span>
+                  <span>15,000원</span>
+                </div>
+              </div><!--today_product-->
+            </div><!--menu_list-->
+            <div class="menu_list">
+              <div class="type_list">
+                <ul class="makeup_type"><a href="#!">유형별</a>
+                  <li><a href="#!">페이스</a></li>
+                  <li><a href="#!">립</a></li>
+                  <li><a href="#!">아이</a></li>
+                  <li><a href="#!">메이크업 소품</a></li>
+                </ul>
+                <ul class="persunal_type"><a href="#!">퍼스널 컬러별</a>
+                  <li><a href="#!">봄웜톤</a></li>
+                  <li><a href="#!">여름쿨톤</a></li>
+                  <li><a href="#!">가을웜톤</a></li>
+                  <li><a href="#!">겨울쿨톤</a></li>
+                </ul>
+                <ul class="colortype"><a href="#!">컬러별</a>
+                  <li><a href="#!">레드</a></li>
+                  <li><a href="#!">핑크</a></li>
+                  <li><a href="#!">라벤더</a></li>
+                  <li><a href="#!">브라운</a></li>
+                </ul>
+              </div>
+              <div class="today_product">
+                <div class="today_img before02"><a href="#!"><img src="../images/menu_02.jpg" alt="이달의 상품 이미지"></a></div>
+                <div class="today_text">
+                  <span>#데일리컬러 #소프트톤</span>
+                  <a href="#!"><p>[NEW/소프트부케컬렉션] 에센셜 블러쉬 탭</p></a>
+                  <span>25%</span>
+                  <span>13,500원</span>
+                  <span>18,000원</span>
+                </div>
+              </div><!--today_product-->
+            </div><!--menu_list02-->
+          </div>
+        </div>
+      </div><!--gnb_down_menu-->
+      <div class="search_popup">
+        <div class="search_popup_box">
+          <div class="popup_title">
+            <span>검색</span>
+            <div class="searchX"></div>
+          </div>
+          <div class="popup_search">
+            <input type="search" placeholder="롬앤 베러 댄 치크 #글레이즈">
+            <img src="../images/search_icon.png" alt="검색 아이콘">
+          </div>
+          <div class="popular">
+            <p>인기검색어</p>
+            <div class="popular_cir">
+              <div><a href="#!">워터 블러링 레이어 틴트</a></div>
+              <div><a href="#!">플레르 틴트</a></div>
+              <div><a href="#!">어센틱 립밤</a></div>
+              <div><a href="#!">레티날 앰플패드</a></div>
+              <div><a href="#!">소프트 블러링 아이팔레트</a></div>
+              <div><a href="#!">비건 앰플</a></div>
+              <div><a href="#!">무드 글로이 틴트</a></div>
+              <div><a href="#!">클리어 수딩 토너</a></div>
+              <div><a href="#!">진정 거즈패드</a></div>
+            </div>
+          </div><!--popular-->
+          <div class="popular_product"><p>인기 있는 상품</p>
+            <div class="popular_list">
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_01.jpg" alt="인기 있는 상품 이미지01"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>나이아신아마이드 10 TXA 4 다크 스팟 코렉팅 세럼</p></a>
+                  <p class="p_price">32,000원</p>
+                  <span>23,000원</span>
+                  <span>28%</span>
+                </div>
+              </div><!--p_list01-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_02.jpg" alt="인기 있는 상품 이미지02"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>멜팅 블러 립 팟 5g</p></a>
+                  <p class="p_price">14,000원</p>
+                  <span>9,800원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list02-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_03.jpg" alt="인기 있는 상품 이미지03"></a></div>
+                <div class="popular_text">
+                    <a href="#!"><p>촉촉 코팅 베르 컬러 글로스[2EA]</p></a>
+                  <p class="p_price">24,000원</p>
+                  <span>19,200원</span>
+                  <span>20%</span>
+                </div>
+              </div><!--p_list03-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_04.jpg" alt="인기 있는 상품 이미지04"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>[NEW 컬러]볼륨메이트 블러틴트/글로스</p></a>
+                  <p class="p_price">18,000원</p>
+                  <span>12,600원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list04-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_05.jpg" alt="인기 있는 상품 이미지05"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>[NEW컬러] 벨벳 립펜슬 기획</p></a>
+                  <p class="p_price">14,000원</p>
+                  <span>9,800원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list05-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_06.jpg" alt="인기 있는 상품 이미지06"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>청귤 비타C 나이아신아마이드 10 흔적앰플 30ml</p></a>
+                  <p class="p_price">32,000원</p>
+                  <span>24,000원</span>
+                  <span>25%</span>
+                </div>
+              </div><!--p_list06-->
+            </div><!--popular_list-->
+          </div>
+        </div>
+      </div><!--search_popup-->
+    </header>
+  </div>
+  <div class="tab_bar">
+    <ul>
+      <li class="menu_btn">
+        <img src="../images/bar_menu.png" alt="menu_icon">
+        <p>카테고리</p>
+      </li>
+      <li class="bar_search">
+        <img src="../images/bar_search.png" alt="menu_icon">
+        <p>검색</p>
+      </li>
+      <li class="home"><a href="../index.html">
+        <img src="../images/bar_home.png" alt="menu_icon">
+        <p>홈</p></a>
+      </li>
+      <li><a href="./cart.html">
+        <img src="../images/bar_shopping.png" alt="menu_icon">
+        <p>장바구니</p></a>
+      </li>
+      <li><a href="../login/login.html">
+        <img src="../images/bar_user.png" alt="menu_icon">
+        <p>마이</p></a>
+      </li>
+    </ul>
+  </div>
+  <div class="gnb_mobile">
+    <div class="searchX"><img src="../images/delete_b.png" alt="delete"></div>
+    <div class="join_txt">
+      <a href="../login/login.html">로그인/회원가입
+      <p>지금 회원가입하고 풍성한 혜택 받아가세요!</p></a>
+    </div>
+    <ul>
+      <li>
+        <button type="button" class="btn_product">Product
+          <img src="../images/arrow_bot.png" alt="arrow_bot_img" class="arrow">
+        </button>
+        <ul class="sub_menu">
+          <li class="skincare">
+            <button type="button" class="btn_skincare">스킨케어
+              <span></span>
+            </button>
+            <div class="detail_menu">
+              <div>
+                <p>유형별</p>
+                <div class="txt">
+                  <a href="#!">토너</a>
+                  <a href="#!">세럼/앰플</a>
+                  <a href="#!">로션/크림</a>
+                  <a href="#!">마스크팩</a>
+                  <a href="#!">클렌징/스크럽</a>
+                  <a href="#!">선케어</a>
+                </div>
+              </div>
+              <div class="sub">
+                <p>피부고민별</p>
+                <div class="txt">
+                  <a href="#!">모공/피부결</a>
+                  <a href="#!">민감/진정</a>
+                  <a href="#!">수분/보습</a>
+                  <a href="#!">트러블/피지</a>
+                  <a href="#!">주름/탄력</a>
+                  <a href="#!">잡티/톤</a>
+                </div>
+              </div>
+              <div>
+                <p>피부타입별</p>
+                <div class="txt">
+                  <a href="#!">지성</a>
+                  <a href="#!">건성</a>
+                  <a href="#!">복합성</a>
+                  <a href="#!">민감피부</a>
+                </div>
+              </div>
+            </div>
+          </li><!--skincare-->
+          <li class="makeup">
+            <button type="button" class="btn_makeup">메이크업
+              <span></span>
+            </button>
+            <div class="detail_menu">
+              <div>
+                <p>유형별</p>
+                <div class="txt">
+                  <a href="#!">페이스</a>
+                  <a href="#!">립</a>
+                  <a href="#!">아이</a>
+                  <a href="#!">메이크업 소품</a>
+                </div>
+              </div>
+              <div>퍼스널 컬러별</p>
+                <div class="txt">
+                  <a href="#!">봄웜톤</a>
+                  <a href="#!">여름쿨톤</a>
+                  <a href="#!">가을웜톤</a>
+                  <a href="#!">겨울쿨톤</a>
+                </div>
+              </div>
+              <div>
+                <p>컬러별</p>
+                <div class="txt">
+                  <a href="#!">레드</a>
+                  <a href="#!">핑크</a>
+                  <a href="#!">라벤더</a>
+                  <a href="#!">브라운</a>
+                </div>
+              </div>
+            </div>
+          </li><!--makeup-->
+        </ul><!--sub_menu-->
+      </li><!--product-->
+      <li><a href="#!">For You</a></li>
+      <li><a href="#!">Event</a></li>
+      <li><a href="#!">Best</a></li>
+      <li><a href="#!">Review</a></li>
+      <li><a href="#!">Brand</a></li>
+    </ul>
+  </div>
+  <input type="checkbox" id="chk_skin">
+  <div class="all">
+    <div class="breadcrumb">
+      <div class="b_home"><a href="../index.html">홈</a></div>
+      <div class="arrow_right mobile"><img src="./images/crumb_right.png" alt="카테고리 경로 화살표 이미지"></div>
+      <div class="skin_mobile"><a href="#!">스킨케어</a></div>
+      <div class="arrow_right"><img src="./images/crumb_right.png" alt="카테고리 경로 화살표 이미지"></div>
+      <div class="skin_crumb"><a href="#!">피부고민별</a></div>
+      <label for="chk_skin">피부고민별
+        <i class="fa-solid fa-caret-down"></i>
+      </label>
+    </div><!--breadcrumb-->
+    <div class="crumb_menu">
+      <div class="crumb_box">
+        <div class="txt">
+          <p class="on">모공/피부결</p>
+          <p>민감/진정</p>
+          <p>수분/보습</p>
+          <p>트러블/피지</p>
+          <p>주름/탄력</p>
+          <p>잡티/톤</p>
+        </div>
+      </div>
+    </div> 
+
+    <!-- <input type="checkbox" id="filter"> -->
+
+    <input type="checkbox" name="worry_icon" id="chk_shop01">
+    <input type="checkbox" name="worry_icon" id="chk_heart01">
+    <input type="checkbox" name="worry_icon" id="chk_heart02">
+    <input type="checkbox" name="worry_icon" id="chk_heart03">
+    <input type="checkbox" name="worry_icon" id="chk_heart04">
+    <input type="checkbox" name="worry_icon" id="chk_heart05">
+    <input type="checkbox" name="worry_icon" id="chk_heart06">
+    <input type="checkbox" name="worry_icon" id="chk_heart07">
+    <input type="checkbox" name="worry_icon" id="chk_heart08">
+    <input type="checkbox" name="worry_icon" id="chk_heart09">
+    <input type="checkbox" name="worry_icon" id="chk_heart10">
+    <input type="checkbox" name="worry_icon" id="chk_heart11">
+    <input type="checkbox" name="worry_icon" id="chk_heart12">
+    <input type="checkbox" name="worry_icon" id="chk_heart13">
+    <input type="checkbox" name="worry_icon" id="chk_heart14">
+    <input type="checkbox" name="worry_icon" id="chk_heart15">
+    <input type="checkbox" name="worry_icon" id="chk_heart16">
+    <input type="checkbox" name="worry_icon" id="chk_heart17">
+    <input type="checkbox" name="worry_icon" id="chk_heart18">
+
+    <input type="checkbox" name="del" id="chk_shop01">
+
+    <section class="sub_worry">
+      <div class="tab_box">
+        <div class="worry01 on_tab">모공/피부결<img src="./images/label_arrow.png" alt=""><img src="./images/label_arrow_p.png" alt="" class="arrow_p"></div>
+        <div class="worry02">민감/진정<img src="./images/label_arrow.png" alt=""><img src="./images/label_arrow_p.png" alt="" class="arrow_p"></div>
+        <div class="worry03">수분/보습<img src="./images/label_arrow.png" alt=""><img src="./images/label_arrow_p.png" alt="" class="arrow_p"></div>
+        <div class="worry04">트러블/피지<img src="./images/label_arrow.png" alt=""><img src="./images/label_arrow_p.png" alt="" class="arrow_p"></div>
+        <div class="worry05">주름/탄력<img src="./images/label_arrow.png" alt=""><img src="./images/label_arrow_p.png" alt="" class="arrow_p"></div>
+        <div class="worry06">잡티/톤<img src="./images/label_arrow.png" alt=""><img src="./images/label_arrow_p.png" alt="" class="arrow_p"></div>
+      </div>
+      <div class="worry_right">
+        <div class="title">
+          <span>피부고민별</span>
+          <div class="line"></div>
+          <div class="span_title">
+            <span class="on_title">모공/피부결</span>
+            <span>민감/진정</span>
+            <span>수분/보습</span>
+            <span>트러블/피지</span>
+            <span>주름/탄력</span>
+            <span>잡티/톤</span>
+          </div>
+        </div>
+        <div class="worry_product_box">
+          <div class="filter_box">
+            <span>총 18개</span>
+            <div class="filter">인기순<img src="./images/filter_arrow.png">
+            </div>            
+            <ul class="filter_sheet">
+              <li class="on"><a href="#!">인기순</a></li>
+              <li><a href="#!">신상품순</a></li>
+              <li><a href="#!">낮은가격순</a></li>
+              <li><a href="#!">높은가격순</a></li>
+            </ul>
+          </div><!--filter_box-->
+          <div class="worry_list_box">
+            <div class="pores_box on_sheet">
+              <div class="top_box">
+                <div class="worry_list">
+                  <div class="worry_img p_line"><a href="./detail.html"><img src="./images/sub_01.jpg" alt="모공/피부결 이미지01"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart01" class="heart01"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #탄력</span>
+                    <a href="./detail.html"><p>[모공탄력] 레티날 탄력 앰플패드 리필 기획</p></a>
+                    <span>35%</span>
+                    <span>25,300원</span>
+                    <span>39,000원</span>
+                  </div>
+                </div><!--worry_list01-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_02.jpg" alt="모공/피부결 이미지02"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart02" class="heart02"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #트러블</span>
+                    <a href="#!"><p>레티놀 시카 흔적 앰플</p></a>
+                    <span>25%</span>
+                    <span>30,000원</span>
+                    <span>40,000원</span>
+                  </div>        
+                </div><!--worry_list02-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_03.jpg" alt="모공/피부결 이미지03"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart03" class="heart03"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #타이트닝</span>
+                    <a href="#!"><p>본셉 레티날 콜라겐 글로우 크림 팩</p></a>
+                    <span>10%</span>
+                    <span>11,610원</span>
+                    <span>12,900원</span>
+                  </div>        
+                </div><!--worry_list03-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_04.jpg" alt="모공/피부결 이미지04"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart04" class="heart04"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피부결</span>
+                    <a href="#!"><p>피그애씨드 펩타이드 스킨부스터샷 에센스 기획</p></a>
+                    <span>28%</span>
+                    <span>18,800원</span>
+                    <span>26,000원</span>
+                  </div>        
+                </div><!--worry_list04-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_05.jpg" alt="모공/피부결 이미지05"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart05" class="heart05"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피부결 #트러블</span>
+                    <a href="#!"><p>리얼 시카 카밍 95 트러블 앰플 50ml</p></a>
+                    <span>30%</span>
+                    <span>19,800원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list05-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_06.jpg" alt="모공/피부결 이미지06"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart06" class="heart06"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #피부결</span>
+                    <a href="#!"><p>자작나무 수분 부스팅 패드</p></a>
+                    <span>20%</span>
+                    <span>20,800원</span>
+                    <span>26,000원</span>
+                  </div>        
+                </div><!--worry_list06-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_07.jpg" alt="모공/피부결 이미지07"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart07" class="heart07"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피지</span>
+                    <a href="#!"><p>[모공토닉] 아이소이 포어 타이트닝 토닉 에센스 90ml</p></a>
+                    <span>25%</span>
+                    <span>24,000원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list07-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_08.jpg" alt="모공/피부결 이미지08"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart08" class="heart08"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #수분</span>
+                    <a href="#!"><p>히알샷 베리어 크림 B5 1+1 기획</p></a>
+                    <span>27%</span>
+                    <span>21,900원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list08-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_09.jpg" alt="모공/피부결 이미지09"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart09" class="heart09"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피부결</span>
+                    <a href="#!"><p>[NEW] 청귤 비타C 토닝 클렌징오일 200ml</p></a>
+                    <span>23%</span>
+                    <span>16,900원</span>
+                    <span>22,000원</span>
+                  </div>        
+                </div><!--worry_list09-->
+              </div>
+              <div class="bot_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_10.jpg" alt="모공/피부결 이미지10"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart10" class="heart10"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피부결</span>
+                    <a href="#!"><p>[소용량 30mL] 레티놀 시카 흔적 장벽크림</p></a>
+                    <span>50%</span>
+                    <span>10,500원</span>
+                    <span>21,000원</span>
+                  </div>        
+                </div><!--worry_list10-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_11.jpg" alt="모공/피부결 이미지11"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart11" class="heart11"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #진정</span>
+                    <a href="#!"><p>레드 블레미쉬 10-시카 캡슐 수딩 토너 300mL</p></a>
+                    <span>50%</span>
+                    <span>15,000원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list11-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_12.jpg" alt="모공/피부결 이미지12"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart12" class="heart12"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #리프팅</span>
+                    <a href="#!"><p>더 레티놀 0.1 크림 20ml</p></a>
+                    <span>8%</span>
+                    <span>23,000원</span>
+                    <span>25,000원</span>
+                  </div>        
+                </div><!--worry_list12-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_13.jpg" alt="모공/피부결 이미지13"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart13" class="heart13"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피부결</span>
+                    <a href="#!"><p>리들샷 올인원 3스텝 마스크</p></a>
+                    <span>20%</span>
+                    <span>3,200원</span>
+                    <span>4,000원</span>
+                  </div>        
+                </div><!--worry_list13-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_14.jpg" alt="모공/피부결 이미지14"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart14" class="heart14"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공케어 #탄력</span>
+                    <a href="#!"><p>포어 슈링커 바쿠치올 크림</p></a>
+                    <span>23%</span>
+                    <span>28,900원</span>
+                    <span>38,000원</span>
+                  </div>        
+                </div><!--worry_list14-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_15.jpg" alt="모공/피부결 이미지15"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart15" class="heart15"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #피부결</span>
+                    <a href="#!"><p>메디힐 모공톡스 탄산 버블 시트 1매</p></a>
+                    <span>50%</span>
+                    <span>1,500원</span>
+                    <span>3,000원</span>
+                  </div>        
+                </div><!--worry_list15-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_16.jpg" alt="모공/피부결 이미지16"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart16" class="heart16"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피부결</span>
+                    <a href="#!"><p>[모공피지케어] 클리어디어 미나리 모공 앰플클렌저 80ml</p></a>
+                    <span>25%</span>
+                    <span>13,500원</span>
+                    <span>18,000원</span>
+                  </div>        
+                </div><!--worry_list16-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_17.jpg" alt="모공/피부결 이미지17"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart17" class="heart17"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피지</span>
+                    <a href="#!"><p>비플레인 녹두 약산성 클렌징폼 80ml</p></a>
+                    <span>37%</span>
+                    <span>9,500원</span>
+                    <span>15,000원</span>
+                  </div>        
+                </div><!--worry_list17-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_18.jpg" alt="모공/피부결 이미지18"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart18" class="heart18"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피부결</span>
+                    <a href="#!"><p>마몽드 레티놀 앰플 토너 250ml</p></a>
+                    <span>30%</span>
+                    <span>17,500원</span>
+                    <span>25,000원</span>
+                  </div>        
+                </div><!--worry_list18-->
+              </div>
+            </div><!--pores_box-->
+            <div class="sen_box">
+              <div class="top_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!l"><img src="./images/sub02_1.jpg" alt="민감/진정 이미지01"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart01" class="heart01"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #수분</span>
+                    <a href="#!"><p>피토 시카놀 크림 50g</p></a>
+                    <span>20%</span>
+                    <span>34,400원</span>
+                    <span>43,000원</span>
+                  </div>        
+                </div><!--worry_list01-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_2.jpg" alt="민감/진정 이미지02"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart02" class="heart02"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #장벽개선</span>
+                    <a href="#!"><p>본셉 PDRN 리페어 앰플</p></a>
+                    <span>15%</span>
+                    <span>11,000원</span>
+                    <span>12,900원</span>
+                  </div>        
+                </div><!--worry_list02-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_3.jpg" alt="민감/진정 이미지03"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart03" class="heart03"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #트러블</span>
+                    <a href="#!"><p>어성초 77 B3징크 트러블 세럼</p></a>
+                    <span>25%</span>
+                    <span>23,900원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list03-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_4.jpg" alt="민감/진정 이미지04"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart04" class="heart04"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #보습</span>
+                    <a href="#!"><p>스네일 리들샷 100B</p></a>
+                    <span>15%</span>
+                    <span>27,200원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list04-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_5.jpg" alt="민감/진정 이미지05"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart05" class="heart05"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #장벽</span>
+                    <a href="#!"><p>더마 크림 팩 클렌저_마데카소사이드</p></a>
+                    <span>22%</span>
+                    <span>16,400원</span>
+                    <span>21,000원</span>
+                  </div>        
+                </div><!--worry_list05-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_6.jpg" alt="민감/진정 이미지06"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart06" class="heart06"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #보습</span>
+                    <a href="#!"><p>에스트라 에이시카365 흔적진정세럼 pH4.5</p></a>
+                    <span>15%</span>
+                    <span>32,300원</span>
+                    <span>38,000원</span>
+                  </div>        
+                </div><!--worry_list06-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_7.jpg" alt="민감/진정 이미지07"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart07" class="heart07"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#민감 #피부진정</span>
+                    <a href="#!"><p>엑소좀 시카 토너</p></a>
+                    <span>11%</span>
+                    <span>16,000원</span>
+                    <span>18,000원</span>
+                  </div>        
+                </div><!--worry_list07-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_8.jpg" alt="민감/진정 이미지08"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart08" class="heart08"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #수분</span>
+                    <a href="#!"><p>레드 블레미쉬 클리어 수딩 크림 70mL</p></a>
+                    <span>27%</span>
+                    <span>27,600원</span>
+                    <span>38,000원</span>
+                  </div>        
+                </div><!--worry_list08-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_9.jpg" alt="민감/진정 이미지09"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart09" class="heart09"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #진정</span>
+                    <a href="#!"><p>히알루로닉 인텐스 세럼</p></a>
+                    <span>33%</span>
+                    <span>26,800원</span>
+                    <span>40,000원</span>
+                  </div>        
+                </div><!--worry_list09-->
+              </div>
+              <div class="bot_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_10.jpg" alt="민감/진정 이미지10"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart10" class="heart10"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #저자극</span>
+                    <a href="#!"><p>바이오더마 센시비오 토너 250ml</p></a>
+                    <span>25%</span>
+                    <span>22,100원</span>
+                    <span>29,500원</span>
+                  </div>        
+                </div><!--worry_list10-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_11.jpg" alt="민감/진정 이미지11"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart11" class="heart11"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #진정</span>
+                    <a href="#!"><p>다이브인 저분자 히알루론산 수딩 크림 100ml</p></a>
+                    <span>30%</span>
+                    <span>16,900원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list11-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_12.jpg" alt="민감/진정 이미지12"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart12" class="heart12"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #보습</span>
+                    <a href="#!"><p>노니 에너지 앰플</p></a>
+                    <span>29%</span>
+                    <span>19,900원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list12-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_13.jpg" alt="민감/진정 이미지13"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart13" class="heart13"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#민감피부 #저자극</span>
+                    <a href="#!"><p>어성초 약산성 딥 클렌징 워터</p></a>
+                    <span>30%</span>
+                    <span>14,800원</span>
+                    <span>21,000원</span>
+                  </div>        
+                </div><!--worry_list13-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_14.jpg" alt="민감/진정 이미지14"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart14" class="heart14"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피부진정 #저자극</span>
+                    <a href="#!"><p>1번 청초 진정맑은 물막선크림</p></a>
+                    <span>30%</span>
+                    <span>18,200원</span>
+                    <span>26,000원</span>
+                  </div>        
+                </div><!--worry_list14-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_15.jpg" alt="민감/진정 이미지15"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart15" class="heart15"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#민감건조 #집중진정</span>
+                    <a href="#!"><p>브링그린 사철쑥 카밍EX 모델링팩투폼 클렌저 120mL</p></a>
+                    <span>25%</span>
+                    <span>16,900원</span>
+                    <span>22,600원</span>
+                  </div>        
+                </div><!--worry_list15-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_16.jpg" alt="민감/진정 이미지16"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart16" class="heart16"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#저자극 #진정</span>
+                    <a href="#!"><p>9배 고농축 어성초 토너 대용량 300ML</p></a>
+                    <span>32%</span>
+                    <span>25,900원</span>
+                    <span>38,000원</span>
+                  </div>        
+                </div><!--worry_list16-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_17.jpg" alt="민감/진정 이미지17"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart17" class="heart17"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #순한클렌징</span>
+                    <a href="#!"><p>마데시카 폼 클렌징 150ml</p></a>
+                    <span>30%</span>
+                    <span>7,000원</span>
+                    <span>10,000원</span>
+                  </div>        
+                </div><!--worry_list17-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_18.jpg" alt="민감/진정 이미지18"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart18" class="heart18"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #수분</span>
+                    <a href="#!"><p>시카페어 인텐시브 수딩 리페어 세럼</p></a>
+                    <span>26%</span>
+                    <span>35,900원</span>
+                    <span>49,000원</span>
+                  </div>        
+                </div><!--worry_list18-->
+              </div>
+            </div>
+            <div class="mois_box">
+              <div class="top_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_1.jpg" alt="수분/보습 이미지01"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart01" class="heart01"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#보습 #수분</span>
+                    <a href="#!"><p>히알루론산 레이어 물톡스 앰플 50ml</p></a>
+                    <span>30%</span>
+                    <span>28,500원</span>
+                    <span>41,000원</span>
+                  </div>        
+                </div><!--worry_list01-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_2.jpg" alt="수분/보습 이미지02"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart02" class="heart02"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #저자극</span>
+                    <a href="#!"><p>리얼 히알루로닉 토너 500ml</p></a>
+                    <span>20%</span>
+                    <span>28,000원</span>
+                    <span>35,000원</span>
+                  </div>        
+                </div><!--worry_list02-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_3.jpg" alt="수분/보습 이미지03"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart03" class="heart03"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #수분</span>
+                    <a href="#!"><p>맑은 어성초 진정 수분 선크림</p></a>
+                    <span>14%</span>
+                    <span>18,900원</span>
+                    <span>22,000원</span>
+                  </div>        
+                </div><!--worry_list03-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_4.jpg" alt="수분/보습 이미지04"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart04" class="heart04"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#보습 #장벽개선</span>
+                    <a href="#!"><p>스킨 베리어 시너지 크림 EX 플러스</p></a>
+                    <span>20%</span>
+                    <span>31,200원</span>
+                    <span>39,000원</span>
+                  </div>        
+                </div><!--worry_list04-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_12.jpg" alt="수분/보습 이미지05"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart05" class="heart05"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #보습</span>
+                    <a href="#!"><p>노니 에너지 앰플</p></a>
+                    <span>29%</span>
+                    <span>19,900원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list05-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_6.jpg" alt="수분/보습 이미지06"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart06" class="heart06"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #진정</span>
+                    <a href="#!"><p>1번 판토텐산 액티브업 수딩세럼 50ml</p></a>
+                    <span>25%</span>
+                    <span>22,500원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list06-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_7.jpg" alt="수분/보습 이미지07"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart07" class="heart07"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#보습 #장벽개선</span>
+                    <a href="#!"><p>PDRN 히알루론산 캡슐 100 세럼 마스크</p></a>
+                    <span>50%</span>
+                    <span>2,000원</span>
+                    <span>4,000원</span>
+                  </div>        
+                </div><!--worry_list07-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_8.jpg" alt="수분/보습 이미지08"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart08" class="heart08"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #보습</span>
+                    <a href="#!"><p>[속보습] 브링그린 블루빈 B5-PDRN 마일드 크림 100ml</p></a>
+                    <span>20%</span>
+                    <span>17,600원</span>
+                    <span>22,000원</span>
+                  </div>        
+                </div><!--worry_list08-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_9.jpg" alt="수분/보습 이미지09"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart09" class="heart09"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분진정 #산뜻촉촉</span>
+                    <a href="#!"><p>자작나무 수분 선크림 50ml</p></a>
+                    <span>10%</span>
+                    <span>22,500원</span>
+                    <span>25,000원</span>
+                  </div>        
+                </div><!--worry_list09-->
+              </div>
+              <div class="bot_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_10.jpg" alt="수분/보습 이미지10"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart10" class="heart10"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #보습</span>
+                    <a href="#!"><p>6번 푹잠 마스크팩 세럼 50ml</p></a>
+                    <span>25%</span>
+                    <span>22,500원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list10-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_11.jpg" alt="수분/보습 이미지11"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart11" class="heart11"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #광채</span>
+                    <a href="#!"><p>히알루로닉 붐 세럼 워터 드롭</p></a>
+                    <span>30%</span>
+                    <span>22,400원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list11-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_12.jpg" alt="수분/보습 이미지12"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart12" class="heart12"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #보습</span>
+                    <a href="#!"><p>판테놀 3% 진정장벽 시카세럼 30ml</p></a>
+                    <span>36%</span>
+                    <span>28,800원</span>
+                    <span>45,000원</span>
+                  </div>        
+                </div><!--worry_list12-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_13.jpg" alt="수분/보습 이미지13"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart13" class="heart13"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #저자극</span>
+                    <a href="#!"><p>아쿠아 라이스 약산성 클렌징 폼 160ml</p></a>
+                    <span>20%</span>
+                    <span>25,600원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list13-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_8.jpg" alt="수분/보습 이미지14"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart14" class="heart14"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #수분</span>
+                    <a href="#!"><p>레드 블레미쉬 클리어 수딩 크림 70mL</p></a>
+                    <span>27%</span>
+                    <span>27,600원</span>
+                    <span>38,000원</span>
+                  </div>        
+                </div><!--worry_list14-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_15.jpg" alt="수분/보습 이미지15"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart15" class="heart15"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분진정 #보습</span>
+                    <a href="#!"><p>시카페어 인텐시브 수딩 리페어 트리트먼트 로션</p></a>
+                    <span>25%</span>
+                    <span>29,250원</span>
+                    <span>39,000원</span>
+                  </div>        
+                </div><!--worry_list15-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_16.jpg" alt="수분/보습 이미지16"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart16" class="heart16"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#장벽 #보습</span>
+                    <a href="#!"><p>[리뉴얼] 참마 비건 베리어 크림 80ml</p></a>
+                    <span>20%</span>
+                    <span>22,400원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list16-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_17.jpg" alt="수분/보습 이미지17"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart17" class="heart17"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #보습</span>
+                    <a href="#!"><p>판테토인 크림 80ml</p></a>
+                    <span>20%</span>
+                    <span>33,600원</span>
+                    <span>42,000원</span>
+                  </div>        
+                </div><!--worry_list17-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_11.jpg" alt="수분/보습 이미지18"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart18" class="heart18"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #피부결</span>
+                    <a href="#!"><p>다이브인 저분자 히알루론산 수딩 크림 100ml </p></a>
+                    <span>30%</span>
+                    <span>16,900원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list18-->
+              </div>
+            </div>
+            <div class="trouble_box">
+              <div class="top_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_1.jpg" alt="트러블/피지 이미지01"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart01" class="heart01"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #진정</span>
+                    <a href="#!"><p>그린 시카 콜라겐 클리어 젤 클렌저 2.0 300ml</p></a>
+                    <span>34%</span>
+                    <span>15,900원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list01-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_2.jpg" alt="트러블/피지 이미지02"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart02" class="heart02"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피지케어 #저자극</span>
+                    <a href="#!"><p>어성초 77 클리어 패드</p></a>
+                    <span>31%</span>
+                    <span>19,200원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list02-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_3.jpg" alt="트러블/피지 이미지03"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart03" class="heart03"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피지케어 #진정</span>
+                    <a href="#!"><p>시카 마스크 클렌저</p></a>
+                    <span>15%</span>
+                    <span>23,800원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list03-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_13.jpg" alt="트러블/피지 이미지04"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart04" class="heart04"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #저자극</span>
+                    <a href="#!"><p>아쿠아 라이스 약산성 클렌징 폼 160ml</p></a>
+                    <span>20%</span>
+                    <span>25,600원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list04-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_5.jpg" alt="트러블/피지 이미지05"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart05" class="heart05"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #진정</span>
+                    <a href="#!"><p>노스카나인 트러블 세럼 30ml</p></a>
+                    <span>5%</span>
+                    <span>22,800원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list05-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_6.jpg" alt="트러블/피지 이미지06"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart06" class="heart06"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #피지</span>
+                    <a href="#!"><p>밸런스풀 시카 컨트롤 세럼 50ml</p></a>
+                    <span>26%</span>
+                    <span>17,100원</span>
+                    <span>23,000원</span>
+                  </div>        
+                </div><!--worry_list06-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_7.jpg" alt="트러블/피지 이미지07"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart07" class="heart07"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #진정</span>
+                    <a href="#!"><p>나이아신아마이드 시카 세럼 40ml</p></a>
+                    <span>49%</span>
+                    <span>16,900원</span>
+                    <span>33,000원</span>
+                  </div>        
+                </div><!--worry_list07-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_8.jpg" alt="트러블/피지 이미지08"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart08" class="heart08"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블진정 #흔적케어</span>
+                    <a href="#!"><p>어성초 센텔라 레드 스팟 크림</p></a>
+                    <span>20%</span>
+                    <span>15,900원</span>
+                    <span>19,800원</span>
+                  </div>        
+                </div><!--worry_list08-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_6.jpg" alt="트러블/피지 이미지09"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart09" class="heart09"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #진정</span>
+                    <a href="#!"><p>1번 판토텐산 액티브업 수딩세럼 50ml</p></a>
+                    <span>25%</span>
+                    <span>22,500원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list09-->
+              </div>
+              <div class="bot_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_10.jpg" alt="트러블/피지 이미지10"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart10" class="heart10"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #진정</span>
+                    <a href="#!"><p>[3일진정세럼]브링그린 징크테카 트러블 세럼</p></a>
+                    <span>40%</span>
+                    <span>23,600원</span>
+                    <span>39,600원</span>
+                  </div>        
+                </div><!--worry_list10-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_11.jpg" alt="트러블/피지 이미지11"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart11" class="heart11"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #진정</span>
+                    <a href="#!"><p>소나무 진정 시카 앰플 30ml</p></a>
+                    <span>10%</span>
+                    <span>21,600원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list11-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub03_12.jpg" alt="트러블/피지 이미지12"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart12" class="heart12"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#장벽 #트러블</span>
+                    <a href="#!"><p>판테놀 3% 진정장벽 시카세럼 30ml</p></a>
+                    <span>36%</span>
+                    <span>28,800원</span>
+                    <span>45,000원</span>
+                  </div>        
+                </div><!--worry_list12-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_13.jpg" alt="트러블/피지 이미지13"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart13" class="heart13"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #피지세정</span>
+                    <a href="#!"><p>녹두 약산성 클렌징폼 80ml</p></a>
+                    <span>37%</span>
+                    <span>9,500원</span>
+                    <span>15,000원</span>
+                  </div>        
+                </div><!--worry_list13-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_14.jpg" alt="트러블/피지 이미지14"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart14" class="heart14"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#트러블 #진정</span>
+                    <a href="#!"><p>[리뉴얼] 어니언 뉴페어 겔크림 플러스 50ml</p></a>
+                    <span>25%</span>
+                    <span>24,000원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list14-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_15.jpg" alt="트러블/피지 이미지15"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart15" class="heart15"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피지케어 #진정세안</span>
+                    <a href="#!"><p>[고밀도효소거품] 브링그린 티트리 시카 딥클렌징폼</p></a>
+                    <span>29%</span>
+                    <span>10,500원</span>
+                    <span>14,900원</span>
+                  </div>        
+                </div><!--worry_list15-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub04_16.jpg" alt="트러블/피지 이미지16"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart16" class="heart16"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피지감소 #모공개선</span>
+                    <a href="#!"><p>블랙헤드&포어 토너 210ml</p></a>
+                    <span>20%</span>
+                    <span>16,000원</span>
+                    <span>20,000원</span>
+                  </div>        
+                </div><!--worry_list16-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub02_3.jpg" alt="트러블/피지 이미지17"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart17" class="heart17"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#진정 #트러블</span>
+                    <a href="#!"><p>어성초 77 B3징크 트러블 세럼</p></a>
+                    <span>25%</span>
+                    <span>23,900원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list17-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_09.jpg" alt="트러블/피지 이미지18"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart18" class="heart18"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피지 #트러블</span>
+                    <a href="#!"><p>[NEW] 청귤 비타C 토닝 클렌징오일 200ml</p></a>
+                    <span>23%</span>
+                    <span>16,900원</span>
+                    <span>22,000원</span>
+                  </div>        
+                </div><!--worry_list18-->
+              </div>
+            </div>
+            <div class="wrin_box">
+              <div class="top_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_1.jpg" alt="주름/탄력 이미지01"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart01" class="heart01"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#탄력 #진정</span>
+                    <a href="#!"><p>스피큘 앰플 (펩타이드/이지에프)</p></a>
+                    <span>60%</span>
+                    <span>12,000원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list01-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_2.jpg" alt="주름/탄력 이미지02"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart02" class="heart02"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공탄력 #피부장벽</span>
+                    <a href="#!"><p>레드 락토 콜라겐 타이트닝 앰플 50ml</p></a>
+                    <span>77%</span>
+                    <span>9,900원</span>
+                    <span>43,000원</span>
+                  </div>        
+                </div><!--worry_list02-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_3.jpg" alt="주름/탄력 이미지03"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart03" class="heart03"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#콜라겐 #주름탄력</span>
+                    <a href="#!"><p>콜라겐 리들샷 100 2스텝 하이드로겔 마스크 4매입</p></a>
+                    <span>35%</span>
+                    <span>15,600원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list03-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_4.jpg" alt="주름/탄력 이미지04"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart04" class="heart04"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#기미 #주름</span>
+                    <a href="#!"><p>펩타이드9 멜라 스틱 10g</p></a>
+                    <span>30%</span>
+                    <span>27,300원</span>
+                    <span>39,000원</span>
+                  </div>        
+                </div><!--worry_list04-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_5.jpg" alt="주름/탄력 이미지05"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart05" class="heart05"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#주름 #탄력</span>
+                    <a href="#!"><p>레티날 샷 타이트닝 부스터 스팟 크림 15ml</p></a>
+                    <span>5%</span>
+                    <span>28,500원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list05-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_6.jpg" alt="주름/탄력 이미지06"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart06" class="heart06"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#광채 #탄력</span>
+                    <a href="#!"><p>2번 로즈 PDRN 콜라겐 플럼핑 세럼 30ml</p></a>
+                    <span>25%</span>
+                    <span>22,500원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list06-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_7.jpg" alt="주름/탄력 이미지07"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart07" class="heart07"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#탄력 #주름</span>
+                    <a href="#!"><p>동백 딥 콜라겐 탄력 선세럼 50ml</p></a>
+                    <span>20%</span>
+                    <span>22,400원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list07-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_8.jpg" alt="주름/탄력 이미지08"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart08" class="heart08"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#모공 #탄력</span>
+                    <a href="#!"><p>부활초 비피다 세럼 퍼밍 드롭</p></a>
+                    <span>20%</span>
+                    <span>25,600원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list08-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_9.jpg" alt="주름/탄력 이미지09"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart09" class="heart09"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#결광세럼 #탄력</span>
+                    <a href="#!"><p>바운시 앤 펌 세럼</p></a>
+                    <span>28%</span>
+                    <span>32,400원</span>
+                    <span>45,000원</span>
+                  </div>        
+                </div><!--worry_list09-->
+              </div>
+              <div class="bot_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_10.jpg" alt="주름/탄력 이미지10"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart10" class="heart10"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#탄력 #콜라겐</span>
+                    <a href="#!"><p>콜라겐 겔 마스크 수분초 젤리</p></a>
+                    <span>30%</span>
+                    <span>3,500원</span>
+                    <span>5,000원</span>
+                  </div>        
+                </div><!--worry_list10-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_11.jpg" alt="주름/탄력 이미지11"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart11" class="heart11"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#수분 #탄력</span>
+                    <a href="#!"><p>비피다 바이옴 콤플렉스 앰플 50ml</p></a>
+                    <span>20%</span>
+                    <span>28,000원</span>
+                    <span>35,000원</span>
+                  </div>        
+                </div><!--worry_list11-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_12.jpg" alt="주름/탄력 이미지12"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart12" class="heart12"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#보습 #탄력</span>
+                    <a href="#!"><p>레티놀 3 펩타이드 나이트 리페어 크림</p></a>
+                    <span>20%</span>
+                    <span>33,600원</span>
+                    <span>42,000원</span>
+                  </div>        
+                </div><!--worry_list12-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_13.jpg" alt="주름/탄력 이미지13"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart13" class="heart13"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#탄력 #광채</span>
+                    <a href="#!"><p>V콜라겐 하트핏 멀티밤 10g</p></a>
+                    <span>20%</span>
+                    <span>23,200원</span>
+                    <span>29,000원</span>
+                  </div>        
+                </div><!--worry_list13-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_14.jpg" alt="주름/탄력 이미지14"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart14" class="heart14"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#주름케어 #탄력개선</span>
+                    <a href="#!"><p>딥 콜라겐 레티날 파워 부스팅 크림</p></a>
+                    <span>52%</span>
+                    <span>27,900원</span>
+                    <span>58,000원</span>
+                  </div>        
+                </div><!--worry_list14-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_15.jpg" alt="주름/탄력 이미지15"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart15" class="heart15"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#주름개선 #탄력증가</span>
+                    <a href="#!"><p>블랙티 유스 인핸싱 트리트먼트 에센스</p></a>
+                    <span>40%</span>
+                    <span>17,400원</span>
+                    <span>29,000원</span>
+                  </div>        
+                </div><!--worry_list15-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_16.jpg" alt="주름/탄력 이미지16"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart16" class="heart16"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#탄력 #주름</span>
+                    <a href="#!"><p>[탄력주름] 프랭클리 PDRN 바운스볼 광채세럼 30ml 앰플</p></a>
+                    <span>46%</span>
+                    <span>21,000원</span>
+                    <span>39,000원</span>
+                  </div>        
+                </div><!--worry_list16-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_17.jpg" alt="주름/탄력 이미지17"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart17" class="heart17"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#탄력 #광채</span>
+                    <a href="#!"><p>비건 비타민 콜라겐 클리어 젤 클렌저 300ml</p></a>
+                    <span>50%</span>
+                    <span>13,900원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list17-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub_18.jpg" alt="주름/탄력 이미지18"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart18" class="heart18"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#주름개선 #비타민</span>
+                    <a href="#!"><p>로즈힙 리페어 크림 50ml</p></a>
+                    <span>20%</span>
+                    <span>24,000원</span>
+                    <span>30,000원</span>
+                  </div>        
+                </div><!--worry_list18-->
+              </div>
+            </div>
+            <div class="tone_box">
+              <div class="top_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_1.jpg" alt="잡티/톤 이미지01"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart01" class="heart01"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#잡티 #흔적</span>
+                    <a href="#!"><p>본셉 레티날 콜라겐 글로우 크림 팩</p></a>
+                    <span>14%</span>
+                    <span>20,400원</span>
+                    <span>23,800원</span>
+                  </div>        
+                </div><!--worry_list01-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_2.jpg" alt="잡티/톤 이미지02"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart02" class="heart02"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피부결 #미백</span>
+                    <a href="#!"><p>복숭아 나이아신아마이드 세럼 마스크</p></a>
+                    <span>50%</span>
+                    <span>2,000원</span>
+                    <span>4,000원</span>
+                  </div>        
+                </div><!--worry_list02-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_3.jpg" alt="잡티/톤 이미지03"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart03" class="heart03"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#톤케어 #보습</span>
+                    <a href="#!"><p>리들샷 비타-라이트 브라이트닝 마스크</p></a>
+                    <span>25%</span>
+                    <span>19,500원</span>
+                    <span>26,000원</span>
+                  </div>        
+                </div><!--worry_list03-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_4.jpg" alt="잡티/톤 이미지04"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart04" class="heart04"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#피부생기 #피지</span>
+                    <a href="#!"><p>글루타치온 글로우 클렌징 오일</p></a>
+                    <span>15%</span>
+                    <span>18,700원</span>
+                    <span>22,000원</span>
+                  </div>        
+                </div><!--worry_list04-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_5.jpg" alt="잡티/톤 이미지05"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart05" class="heart05"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#잡티 #모공</span>
+                    <a href="#!"><p>트라넥삼산 잡티 세럼 30ml</p></a>
+                    <span>10%</span>
+                    <span>28,900원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list05-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_6.jpg" alt="잡티/톤 이미지06"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart06" class="heart06"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#미백 #톤업</span>
+                    <a href="#!"><p>5번 글루타치온C 비타수액 에센셜 토너 200ml</p></a>
+                    <span>25%</span>
+                    <span>18,000원</span>
+                    <span>24,000원</span>
+                  </div>        
+                </div><!--worry_list06-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_7.jpg" alt="잡티/톤 이미지07"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart07" class="heart07"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#잡티 #흔적</span>
+                    <a href="#!"><p>5번 글루타치온C 흔적 앰플 30ml</p></a>
+                    <span>25%</span>
+                    <span>21,000원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list07-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_8.jpg" alt="잡티/톤 이미지08"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart08" class="heart08"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#잡티케어 #보습</span>
+                    <a href="#!"><p>글루타치온좀 잡티 크림 비타 튜브</p></a>
+                    <span>20%</span>
+                    <span>28,000원</span>
+                    <span>35,000원</span>
+                  </div>        
+                </div><!--worry_list08-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_9.jpg" alt="잡티/톤 이미지09"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart09" class="heart09"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#톤업 #광채</span>
+                    <a href="#!"><p>씨-나이아신 토닝 크림 50ml</p></a>
+                    <span>20%</span>
+                    <span>13,440원</span> 
+                    <span>16,800원</span>
+                  </div>        
+                </div><!--worry_list09-->
+              </div>
+              <div class="bot_box">
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_10.jpg" alt="잡티/톤 이미지10"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart10" class="heart10"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#비타민 #톤개선</span>
+                    <a href="#!"><p>비타민C 톤업 광채 패드</p></a>
+                    <span>30%</span>
+                    <span>19,600원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list10-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_11.jpg" alt="잡티/톤 이미지11"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart11" class="heart11"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#톤업 #흔적케어</span>
+                    <a href="#!"><p>글루타치온 7 다크스팟 토너 200ml</p></a>
+                    <span>14%</span>
+                    <span>19,800원</span>
+                    <span>23,000원</span>
+                  </div>        
+                </div><!--worry_list11-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_12.jpg" alt="잡티/톤 이미지12"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart12" class="heart12"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#톤 #피부결</span>
+                    <a href="#!"><p>하이퍼 나이아신아마이드 20 세럼 20ml</p></a>
+                    <span>20%</span>
+                    <span>14,400원</span>
+                    <span>18,000원</span>
+                  </div>        
+                </div><!--worry_list12-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_13.jpg" alt="잡티/톤 이미지13"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart13" class="heart13"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#비타민 #톤업</span>
+                    <a href="#!"><p>5번 글루타치온C 흔적 필름패드</p></a>
+                    <span>30%</span>
+                    <span>19,600원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list13-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_14.jpg" alt="잡티/톤 이미지14"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart14" class="heart14"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#생기톤업 #광채</span>
+                    <a href="#!"><p>비타민C 엔자임 잡티 토닝 크림</p></a>
+                    <span>50%</span>
+                    <span>16,000원</span>
+                    <span>32,000원</span>
+                  </div>        
+                </div><!--worry_list14-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_15.jpg" alt="잡티/톤 이미지15"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart15" class="heart15"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#톤 #광채</span>
+                    <a href="#!"><p>갈락 화이트닝 비타 세럼 50ml</p></a>
+                    <span>20%</span>
+                    <span>20,000원</span>
+                    <span>25,000원</span>
+                  </div>        
+                </div><!--worry_list15-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub05_17.jpg" alt="잡티/톤 이미지16"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart16" class="heart16"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#톤업 #비타민</span>
+                    <a href="#!"><p>비건 비타민 콜라겐 클리어 젤 클렌저 300ml</p></a>
+                    <span>50%</span>
+                    <span>13,900원</span>
+                    <span>28,000원</span>
+                  </div>        
+                </div><!--worry_list16-->
+                <div class="worry_list">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_17.jpg" alt="잡티/톤 이미지17"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart17" class="heart17"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#잡티 #톤개선</span>
+                    <a href="#!"><p>울트라 라이트 PDRN 핑크 펩타이드 앰플 30ml</p></a>
+                    <span>46%</span>
+                    <span>24,500원</span>
+                    <span>46,000원</span>
+                  </div>        
+                </div><!--worry_list17-->
+                <div class="worry_list pc">
+                  <div class="worry_img"><a href="#!"><img src="./images/sub06_18.jpg" alt="잡티/톤 이미지18"></a>
+                    <div class="product_icon">
+                      <label for="chk_shop01" class="shopping_p"></label>
+                      <label for="chk_heart18" class="heart18"></label>
+                    </div>
+                  </div><!--worry_img-->
+                  <div class="worry_text">
+                    <span>#미백 #톤개선</span>
+                    <a href="#!"><p>나이아신아마이드 TXA 브라이트닝 부스터 토너</p></a>
+                    <span>20%</span>
+                    <span>20,000원</span>
+                    <span>25,000원</span>
+                  </div>        
+                </div><!--worry_list18-->
+              </div>
+            </div>
+          </div>
+        </div><!--worry_product_box-->
+        <div class="more_btn">More</div>
+      </div><!--worry_right-->
+      <div class="popup_box">
+        <div class="shopping_box">
+          <label for="chk_shop01" class="off"></label>
+          <p>장바구니에 상품이<br>정상적으로 담겼습니다.</p>
+          <label for="chk_shop01" class="conti">계속 쇼핑하기</label>
+          <span><a href="./cart.html">장바구니 이동</a></span>
+        </div>
+      </div><!--popup_box-->
+    </section><!--sub_worry-->
+  </div>
+  <footer class="footer">
+    <div class="footer_box">
+      <div class="footer_left">
+        <div class="footer_logo"><img src="../images/footer_logo.png" alt="푸터 로고 이미지"></div>
+        <p>부산광역시 부산진구 중앙대로 688    |    사업자 등록번호 : 123-45-67890</p>
+        <p>전화번호 : 123-4567-8910    |    이메일 : abcd1234@gmail.com</p>
+      </div>
+      <div class="footer_right">
+        <div class="sns">
+          <div class="kakao"><a href="#!"><img src="../images/f_kakao.png" alt="카카오톡 아이콘"></a></div>
+          <div class="instagram"><a href="#!"><img src="../images/f_insta.png" alt="인스타 아이콘"></a></div>
+          <div class="tube"><a href="#!"><img src="../images/f_youtube.png" alt="유튜브 아이콘"></a></div>
+        </div>
+        <div class="text">
+          <span class="call"><img src="../images/call.png" alt="전화 아이콘"></span>
+          <span>123-456-7890</span>
+        </div>
+        <p>주말,공휴일 휴무</p>
+        <p>상담시간 10:00 ~ 18:00 (점심 12:00~13:00)</p>
+      </div>
+    </div>
+  </footer><!--footer-->
+  <div class="btn">
+    <div class="history"><a href="./history.html"><img src="../images/history_icon.png" alt="최근본상품 아이콘"></a></div>
+    <div class="top"><a href="#top"><img src="../images/top_btn.png" alt="탑버튼 아이콘"></a></div>
+  </div>
+</body>
+</html>

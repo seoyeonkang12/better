@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better</title>
+  <link rel="shortcut icon" href="../images/better_favicon.png" type="image/x-icon">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="../css/header.js"></script>
+  <script src="./css/detail.js" defer></script>
+  <link rel="stylesheet" href="./css/detail.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Fugaz+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {margin: 0; padding: 0;}
+    li {list-style: none;}
+    a {color: black; text-decoration: none;}
+    
+  </style>
+</head>
+<body>
+  <input type="checkbox" name="shop" id="shop_btn">
+  <input type="checkbox" id="bar_heart">
+  <div class="fix">
+    <input type="checkbox" id="banner_close">
+    <div class="top_banner">신규 회원 가입 시 10,000원 쿠폰팩 증정
+    </div><!--top_banner-->
+
+    <header class="header_outer">
+      <div class="header">
+        <div class="logo_gnb">
+          <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="브랜드 로고 이미지"></a></div>
+          <ul class="gnb">
+            <li class="gnb_menu01"><a href="#!">Product</a></li>
+            <li><a href="#!">For You</a></li>
+            <li><a href="#!">Event</a></li>
+            <li><a href="#!">Best</a></li>
+            <li><a href="#!">Review</a></li>
+            <li><a href="#!">Brand</a></li>
+          </ul>
+        </div>
+        <div class="h_back"><a href="./sub.html"><img src="../images/header_arrow.png" alt="arrow_img"></a></div>
+        <div class="h_title">상세정보</div>
+        <div class="header_right">
+          <div class="search">
+            <p>롬앤 베러 댄 치크 #글레이즈</p>
+            <img src="../images/search_icon.png" alt="검색 아이콘">
+          </div>
+          <div class="search_mobile">
+            <img src="../images/search_mobile.png" alt="검색 아이콘">
+          </div>
+          <div class="home_mobile"><a href="../index.html">
+            <img src="../images/home.png" alt="home_icon"></a>
+          </div>
+          <div class="user"><a href="../login/login.html">
+            <div class="user_img"></div>
+            <div class="join_event_box">
+              <div class="join_event"><a href="#!">회원가입 특별혜택</a></div>
+            </div></a>
+          </div>
+          <div class="shopping"><a href="./cart.html"></a></div>
+        </div><!--header_right-->   
+      </div>
+      <div class="gnb_down_menu">
+        <div class="down_menu_box">
+          <div class="gnb_title">
+            <div class="on_tab">스킨케어</div>
+            <div>메이크업</div>
+          </div>
+          <div class="menu_list_box">
+            <div class="menu_list on_sheet">
+              <div class="type_list">
+                <ul class="type"><a href="#!">유형별</a>
+                  <li><a href="#!">토너</a></li>
+                  <li><a href="#!">세럼/앰플</a></li>
+                  <li><a href="#!">로션/크림</a></li>
+                  <li><a href="#!">마스크팩</a></li>
+                  <li><a href="#!">클렌징/스크럽</a></li>
+                  <li><a href="#!">선케어</a></li>
+                </ul>
+                <ul class="worry"><a href="./sub.html">피부고민별</a>
+                  <li><a href="./sub.html">모공/피부결</a></li>
+                  <li><a href="#!">민감/진정</a></li>
+                  <li><a href="#!">수분/보습</a></li>
+                  <li><a href="#!">트러블/피지</a></li>
+                  <li><a href="#!">주름/탄력</a></li>
+                  <li><a href="#!">잡티/톤</a></li>
+                </ul>
+                <ul class="skintype"><a href="#!">피부타입별</a>
+                  <li><a href="#!">지성</a></li>
+                  <li><a href="#!">건성</a></li>
+                  <li><a href="#!">복합성</a></li>
+                  <li><a href="#!">민감피부</a></li>
+                </ul>
+              </div>
+              <div class="today_product">
+                <div class="today_img before01"><a href="#!"><img src="../images/menu_01.jpg" alt="이달의 상품 이미지"></a></div>
+                <div class="today_text">
+                  <span>#딥클렌징 #수분케어</span>
+                  <a href="#!"><p>원더 살구씨 딥 클렌징 오일</p></a>
+                  <span>20%</span>
+                  <span>12,000원</span>
+                  <span>15,000원</span>
+                </div>
+              </div><!--today_product-->
+            </div><!--menu_list-->
+            <div class="menu_list">
+              <div class="type_list">
+                <ul class="makeup_type"><a href="#!">유형별</a>
+                  <li><a href="#!">페이스</a></li>
+                  <li><a href="#!">립</a></li>
+                  <li><a href="#!">아이</a></li>
+                  <li><a href="#!">메이크업 소품</a></li>
+                </ul>
+                <ul class="persunal_type"><a href="#!">퍼스널 컬러별</a>
+                  <li><a href="#!">봄웜톤</a></li>
+                  <li><a href="#!">여름쿨톤</a></li>
+                  <li><a href="#!">가을웜톤</a></li>
+                  <li><a href="#!">겨울쿨톤</a></li>
+                </ul>
+                <ul class="colortype"><a href="#!">컬러별</a>
+                  <li><a href="#!">레드</a></li>
+                  <li><a href="#!">핑크</a></li>
+                  <li><a href="#!">라벤더</a></li>
+                  <li><a href="#!">브라운</a></li>
+                </ul>
+              </div>
+              <div class="today_product">
+                <div class="today_img before02"><a href="#!"><img src="../images/menu_02.jpg" alt="이달의 상품 이미지"></a></div>
+                <div class="today_text">
+                  <span>#데일리컬러 #소프트톤</span>
+                  <a href="#!"><p>[NEW/소프트부케컬렉션] 에센셜 블러쉬 탭</p></a>
+                  <span>25%</span>
+                  <span>13,500원</span>
+                  <span>18,000원</span>
+                </div>
+              </div><!--today_product-->
+            </div><!--menu_list02-->
+          </div>
+        </div>
+      </div><!--gnb_down_menu-->
+      <div class="search_popup">
+        <div class="search_popup_box">
+          <div class="popup_title">
+            <span>검색</span>
+            <div class="searchX"></div>
+          </div>
+          <div class="popup_search">
+            <input type="search" placeholder="롬앤 베러 댄 치크 #글레이즈">
+            <img src="../images/search_icon.png" alt="검색 아이콘">
+          </div>
+          <div class="popular">
+            <p>인기검색어</p>
+            <div class="popular_cir">
+              <div><a href="#!">워터 블러링 레이어 틴트</a></div>
+              <div><a href="#!">플레르 틴트</a></div>
+              <div><a href="#!">어센틱 립밤</a></div>
+              <div><a href="#!">레티날 앰플패드</a></div>
+              <div><a href="#!">소프트 블러링 아이팔레트</a></div>
+              <div><a href="#!">비건 앰플</a></div>
+              <div><a href="#!">무드 글로이 틴트</a></div>
+              <div><a href="#!">클리어 수딩 토너</a></div>
+              <div><a href="#!">진정 거즈패드</a></div>
+            </div>
+          </div><!--popular-->
+          <div class="popular_product"><p>인기 있는 상품</p>
+            <div class="popular_list">
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_01.jpg" alt="인기 있는 상품 이미지01"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>나이아신아마이드 10 TXA 4 다크 스팟 코렉팅 세럼</p></a>
+                  <p class="p_price">32,000원</p>
+                  <span>23,000원</span>
+                  <span>28%</span>
+                </div>
+              </div><!--p_list01-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_02.jpg" alt="인기 있는 상품 이미지02"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>멜팅 블러 립 팟 5g</p></a>
+                  <p class="p_price">14,000원</p>
+                  <span>9,800원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list02-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_03.jpg" alt="인기 있는 상품 이미지03"></a></div>
+                <div class="popular_text">
+                    <a href="#!"><p>촉촉 코팅 베르 컬러 글로스[2EA]</p></a>
+                  <p class="p_price">24,000원</p>
+                  <span>19,200원</span>
+                  <span>20%</span>
+                </div>
+              </div><!--p_list03-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_04.jpg" alt="인기 있는 상품 이미지04"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>[NEW 컬러]볼륨메이트 블러틴트/글로스</p></a>
+                  <p class="p_price">18,000원</p>
+                  <span>12,600원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list04-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_05.jpg" alt="인기 있는 상품 이미지05"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>[NEW컬러] 벨벳 립펜슬 기획</p></a>
+                  <p class="p_price">14,000원</p>
+                  <span>9,800원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list05-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_06.jpg" alt="인기 있는 상품 이미지06"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>청귤 비타C 나이아신아마이드 10 흔적앰플 30ml</p></a>
+                  <p class="p_price">32,000원</p>
+                  <span>24,000원</span>
+                  <span>25%</span>
+                </div>
+              </div><!--p_list06-->
+            </div><!--popular_list-->
+          </div>
+        </div>
+      </div><!--search_popup-->
+    </header>
+  </div>
+  <div class="tab_bar">
+    <ul>
+      <li>
+        <label for="bar_heart" class="bar_heart">
+          <img src="./img_detail/heart_e.png" alt="heart_icon"></label>
+      </li>
+      <li>
+        <label for="shop_btn" class="bar_shopping">
+        <img src="./img_detail/shopping.png" alt="shopping_icon"></label>
+      </li>
+      <li>
+        <button type="button">구매하기</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="all">
+    <div class="breadcrumb">
+      <div class="home"><a href="../index.html">홈</a></div>
+      <div class="arrow_right"><img src="./images/crumb_right.png" alt="카테고리 경로 화살표 이미지"></div>
+      <div class="skin_crumb"><a href="./sub.html">피부고민별</a></div>
+      <div class="arrow_right"><img src="./images/crumb_right.png" alt="카테고리 경로 화살표 이미지"></div>
+      <div class="pores_crumb"><a href="#!">모공/피부결</a></div>
+    </div><!--breadcrumb--> 
+
+    <input type="checkbox"  id="heart_f">
+    <input type="checkbox" id="share_m">
+
+    <section class="detail_box">
+      <div class="detail_left">
+        <div class="img_box">
+          <div class="big_img on_img"><img src="./img_detail/detail_img01.jpg" alt="제품 상세이미지01"></div>
+          <div class="big_img"><img src="./img_detail/detail_img02.jpg" alt="제품 상세이미지02"></div>
+          <div class="big_img"><img src="./img_detail/detail_img03.jpg" alt="제품 상세이미지03"></div>
+        </div>
+        <div class="img_tab_box">
+          <div class="s_img01 on_tab">
+            <div class="back on_back"></div>
+          </div>
+          <div class="s_img02">
+            <div class="back"></div>
+          </div>
+          <div class="s_img03">
+            <div class="back"></div>
+          </div>
+        </div><!--img_tab_box-->
+      </div><!--detail_left-->
+      <div class="detail_right">
+        <p>#모공 #탄력</p>
+        <div class="right_icon">
+          <label for="heart_f" class="heart"><img src="./img_detail/heart_e.png" alt="찜버튼 이미지"></label>
+          <div class="share"><img src="./img_detail/share_e.png" alt="공유 버튼 이미지"></div>
+          <label for="share_m" class="share_m"><img src="./img_detail/share_e.png" alt="공유 버튼 이미지"></label>
+          <div class="share_box">
+            <span>공유하기</span>
+            <div class="share_f"><img src="./img_detail/share_x.png"></div>
+            <div class="share_type">
+              <div class="kakao"><a href="#!">
+                <img src="./img_detail/kakao.png" alt="카카오톡 아이콘이미지">
+                <p>카카오톡</p></a>
+              </div>
+              <div class="url">
+                <img src="./img_detail/url.png">
+                <p>링크복사</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="title">[모공탄력] 레티날 탄력 앰플패드 리필 기획</p>
+        <span class="star_s"><img src="./img_detail/star_s.png" alt=""></span>
+        <span>4.9(259)</span>
+        <div class="price">
+          <span>35%</span>
+          <span>25,300원</span>
+          <span>39,000원</span>
+        </div>
+        <div class="tab_box">
+          <div class="ex_tab">
+            <span class="on">제품설명</span>
+            <span>주요성분</span>
+            <span>사용방법</span>
+          </div>
+          <div class="tab_infor">
+            <p class="on_infor">탄탄한 피부 탄력과 매끄러운 피부결을 선사하는 앰플패드로<br>
+            피부 탄력은 더하고 마데카소사이드로 진정까지 한 번에 가능합니다.</p>
+            <p >피부를 촉촉하게 관리해주는 만능 단백질 <span>하이드롤라이즈드콜라겐</span><br>
+            자극 걱정을 덜어주는 비타민A 성분인 <span>레티날</span></p>
+            <p>본품을 피부에 붙이고 10~20분 후 지지체를<br>
+            제거한 다음 남은 제품을 골고루 펴바릅니다.</p>
+          </div>
+        </div><!--tab_box-->
+        <div class="product_infor">
+          <div class="p_in01">
+            <p>용량</p>
+            <p>배송정보</p>
+          </div>
+          <div class="p_in02">
+            <p>80매+80매</p>
+            <p>3,000원 <span>(20,000원 이상 무료 배송)</span></p>
+          </div>
+        </div><!--product_infor-->
+        <div class="price_count">
+          <div class="count_text">
+            <p>앰플패드 더블기획</p>
+            <p>25,300원</p>
+          </div>
+          <div class="count">
+            <button class="min">ㅡ</button>
+            <span class="count_num">1</span>
+            <button class="add">+</button>
+          </div>
+        </div><!--price_count-->
+        <div class="total">
+          <span>총 결제금액</span>
+          <span>25,300원</span>
+        </div><!--total-->
+        <div class="btn_box">
+          <label for="shop_btn">장바구니</label>
+          <div class="pay_btn"><a href="#!">구매하기</a></div>
+        </div>
+      </div><!--detail_right-->
+      <div class="popup_box">
+        <div class="shopping_box">
+          <label for="shop_btn" class="off"></label>
+          <p>장바구니에 상품이<br>정상적으로 담겼습니다.</p>
+          <label for="shop_btn" class="conti">계속 쇼핑하기</label>
+          <span><a href="./cart.html">장바구니 이동</a></span>
+        </div>
+      </div><!--popup_box-->
+    </section><!--detail_box-->
+    <div class="share_bg">
+      <div class="share_box">
+        <span>공유하기</span>
+        <label for="share_m" class="share_f"><img src="./img_detail/share_x.png"></label>
+        <div class="share_type">
+          <div class="kakao"><a href="#!">
+            <img src="./img_detail/kakao.png" alt="카카오톡 아이콘이미지">
+            <p>카카오톡</p></a>
+          </div>
+          <div class="url">
+            <img src="./img_detail/url.png">
+            <p>링크복사</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type="radio" name="filter_tab" id="filter01" checked>
+    <input type="radio" name="filter_tab" id="filter02">
+
+    <input type="checkbox" name="rev_type" id="star_type">
+    <input type="checkbox" name="rev_type" id="skin_type">
+    <input type="checkbox" name="rev_type" id="worry_type">
+    <input type="checkbox" name="rev_type" id="age_type">
+
+    <input type="checkbox" name="skin_chk" id="skin_01">
+    <input type="checkbox" name="skin_chk" id="skin_02">
+    <input type="checkbox" name="skin_chk" id="skin_03">
+    <input type="checkbox" name="skin_chk" id="skin_04">
+    
+    <input type="checkbox" name="worry_chk" id="worry_01">
+    <input type="checkbox" name="worry_chk" id="worry_02">
+    <input type="checkbox" name="worry_chk" id="worry_03">
+    <input type="checkbox" name="worry_chk" id="worry_04">
+    <input type="checkbox" name="worry_chk" id="worry_05">
+    <input type="checkbox" name="worry_chk" id="worry_06">
+
+    <input type="checkbox" name="age_chk" id="age_01">
+    <input type="checkbox" name="age_chk" id="age_02">
+    <input type="checkbox" name="age_chk" id="age_03">
+    <input type="checkbox" name="age_chk" id="age_04">
+
+    <input type="checkbox" name="heart_number" id="heart_num">
+    <input type="checkbox" name="heart_number" id="heart_num02">
+    <input type="checkbox" name="heart_number" id="heart_num03">
+
+    <input type="radio" name="number" id="num01" checked>
+    <input type="radio" name="number" id="num02">
+    <input type="radio" name="number" id="num03">
+    <input type="radio" name="number" id="num04">
+    <input type="radio" name="number" id="num05">
+
+    <input type="checkbox" name="tab_not" id="notice_tab" checked>
+    <input type="checkbox" name="tab_not" id="notice_tab02" checked>
+
+    <div class="information">
+      <div class="contents">
+        <div class="detail_page">
+          <div class="infor_tab on" id="infor">
+            <div class="det_tab"><a href="#infor">상세정보</a></div>
+            <div class="rev_tab"><a href="#rev">리뷰 259</a></div>
+            <div class="deli_tab"><a href="#not">배송안내</a></div>
+          </div><!--infor_tab-->
+          <img src="./img_detail/detail_01.jpg" alt="상세페이지 이미지01">
+          <div class="gradi"></div>
+          <div class="page_bot">
+            <img src="./img_detail/detail_02.jpg" alt="상세페이지 이미지02">
+            <img src="./img_detail/detail_03.jpg" alt="상세페이지 이미지03">
+            <img src="./img_detail/detail_04.jpg" alt="상세페이지 이미지04">
+            <p>How to Use</p>
+            <p>신축성이 뛰어난 <span>V 밴딩 패드</span>로</p>
+            <p>탄력 고민 부위에 맞게 늘려서 사용하는</p>
+            <p>나만의 #패드레시피</p>
+            <img src="./img_detail/detail_05.jpg">
+            <img src="./img_detail/detail_06.jpg" alt="상세페이지 이미지06">
+            <img src="./img_detail/detail_07.jpg" alt="상세페이지 이미지07">
+            <img src="./img_detail/detail_08.jpg" alt="상세페이지 이미지08">
+            <img src="./img_detail/detail_09.jpg" alt="상세페이지 이미지09">
+            <img src="./img_detail/detail_10.jpg" alt="상세페이지 이미지10">
+          </div>
+          <div class="more_btn">
+            <div class="more">더보기<img src="./img_detail/more_btn.png"><img src="./img_detail/more_btn_w.png" class="white"></div>
+            <div class="fold">접기<img src="./img_detail/more_btn_f.png"><img src="./img_detail/more_btn_f_w.png" class="white"></div>
+          </div><!--more_btn-->
+        </div><!--detail_page-->
+        <div class="review_box" id="rev">
+          <div class="infor_tab">
+            <div class="det_tab"><a href="#infor">상세정보</a></div>
+            <div class="rev_tab"><a href="#rev">리뷰 259</a></div>
+            <div class="deli_tab"><a href="#not">배송안내</a></div>
+          </div><!--infor_tab-->
+          <div class="review">
+            <div class="rev_title">
+              <p>REVIEW</p>
+              <p><a href="#!">전체상품보기</a></p>
+            </div>
+            <div class="stars">
+              <div class="stars_left">
+                <span><img src="./img_detail/star_b.png"></span>
+                <span>4.9</span>
+                <p>259개의 리뷰</p>
+                <div class="myrev"><a href="#!">내 리뷰 작성하기</a></div>
+              </div>
+              <div class="line"></div>
+              <div class="stars_right">
+                <div class="good">
+                  <p>아주 좋아요</p>
+                  <p>맘에 들어요</p>
+                  <p>보통이에요</p>
+                  <p>그냥 그래요</p>
+                  <p>별로에요</p>
+                </div>
+                <div class="graph_box">
+                  <div class="graph_g">
+                    <div class="graph_b01"></div>
+                  </div>
+                  <div class="graph_g">
+                    <div class="graph_b02"></div>
+                  </div>
+                  <div class="graph_g">
+                    <div class="graph_b03"></div>
+                  </div>
+                  <div class="graph_g"></div>
+                  <div class="graph_g"></div>
+                </div>
+                <div class="number">
+                  <p>152</p>
+                  <p>9</p>
+                  <p>2</p>
+                  <p>0</p>
+                  <p>0</p>
+                </div>
+              </div>
+            </div><!--stars-->
+            <div class="photo_rev">
+              <div class="photo_title">
+                <p>포토&동영상</p>
+                <p><a href="#!">전체보기</a></p>
+              </div>
+              <div class="photo_img">
+                <img src="./img_detail/review_01.jpg" alt="리뷰이미지01">
+                <img src="./img_detail/review_02.jpg" alt="리뷰이미지02">
+                <img src="./img_detail/review_03.jpg" alt="리뷰이미지03">
+                <img src="./img_detail/review_04.jpg" alt="리뷰이미지04">
+                <img src="./img_detail/review_05.jpg" alt="리뷰이미지05">
+                <img src="./img_detail/review_06.jpg" alt="리뷰이미지06">
+              </div>
+            </div><!--photo_rev-->
+            <div class="filter_search">
+              <div class="filter_label">
+                <label for="filter01" class="recomm">추천순</label>
+                <div class="line"></div>
+                <label for="filter02" class="new">최신순</label>
+              </div>
+              <div class="rev_search">
+                <img src="./img_detail/search_g.png">
+                <input type="search" placeholder="리뷰 키워드 검색">
+              </div>
+            </div><!--filter_search-->
+            <div class="filter_type">
+              <label for="star_type" class="type01">별점<img src="./img_detail/filter_arrow.png"><img src="./img_detail/arrow_b.png" class="black"></label>
+              <label for="skin_type" class="type02">피부타입<img src="./img_detail/filter_arrow.png"><img src="./img_detail/arrow_b.png" class="black"></label>
+              <label for="worry_type" class="type03">피부고민<img src="./img_detail/filter_arrow.png"><img src="./img_detail/arrow_b.png" class="black"></label>
+              <label for="age_type" class="type04">연령대<img src="./img_detail/filter_arrow.png"><img src="./img_detail/arrow_b.png" class="black"></label>
+              <div class="filter_type_box">
+                <div class="star_box">
+                  <div class="filter_title">별점</div>
+                  <label for="star_05" class="star05">
+                    <img src="./img_detail/star_05.png">
+                    <span>아주 좋아요</span>
+                    <input type="checkbox" id="star_05">
+                  </label>
+                  <label for="star_04" class="star04">
+                    <img src="./img_detail/star_04.png">
+                    <span>맘에 들어요</span>
+                    <input type="checkbox" id="star_04">
+                  </label>
+                  <label for="star_03" class="star03">
+                    <img src="./img_detail/star_03.png">
+                    <span>보통이에요</span>
+                    <input type="checkbox" id="star_03">
+                  </label>
+                  <label for="star_02" class="star02">
+                    <img src="./img_detail/star_02.png">
+                    <span>그냥 그래요</span>
+                    <input type="checkbox" id="star_02">
+                  </label>
+                  <label for="star_01" class="star01">
+                    <img src="./img_detail/star_01.png">
+                    <span>별로에요</span>
+                    <input type="checkbox" id="star_01">
+                  </label>
+                  <div><label for="star_type" class="filter_on">적용</label></div>
+                </div><!--star_box-->
+                <div class="skin_box">
+                  <div class="filter_title">피부타입</div>
+                  <label for="skin_01" class="skin01">
+                    <span>지성</span>
+                  </label>
+                  <label for="skin_02" class="skin02">
+                    <span>건성</span>
+                  </label>
+                  <label for="skin_03" class="skin03">
+                    <span>복합성</span>
+                  </label>
+                  <label for="skin_04" class="skin04">
+                    <span>민감피부</span>
+                  </label>
+                  <div class="line"></div>
+                  <div><label for="skin_type" class="filter_on">적용</label></div>
+                </div><!--skin_box-->
+                <div class="worry_box">
+                  <div class="filter_title">피부고민</div>
+                  <label for="worry_01" class="worry01">
+                    <span>모공/피부결</span>
+                  </label>
+                  <label for="worry_02" class="worry02">
+                    <span>민감/진정</span>
+                  </label>
+                  <label for="worry_03" class="worry03">
+                    <span>수분/보습</span>
+                  </label>
+                  <label for="worry_04" class="worry04">
+                    <span>트러블/피지</span>
+                  </label>
+                  <label for="worry_05" class="worry05">
+                    <span>주름/탄력</span>
+                  </label>
+                  <label for="worry_06" class="worry06">
+                    <span>잡티/톤</span>
+                  </label>
+                  <div class="line"></div>
+                  <div><label for="worry_type" class="filter_on">적용</label></div>
+                </div><!--worry_box-->
+                <div class="age_box">
+                  <div class="filter_title">연령대</div>
+                  <label for="age_01" class="age01">
+                    <span>10대</span>
+                  </label>
+                  <label for="age_02" class="age02">
+                    <span>20대</span>
+                  </label>
+                  <label for="age_03" class="age03">
+                    <span>30대</span>
+                  </label>
+                  <label for="age_04" class="age04">
+                    <span>40대 이상</span>
+                  </label>
+                  <div class="line"></div>
+                  <div><label for="age_type" class="filter_on">적용</label></div>
+                </div><!--age_box-->
+              </div><!--filter_type_box-->
+            </div><!--filter_type-->
+            <div class="rev_box">
+              <div class="rev_list">
+                <div class="users">
+                  <p>강**</p>
+                  <span>연령대 20대 · 피부타입 복합성</span>
+                </div>
+                <div class="rev_list_left">
+                  <img src="./img_detail/rev_star.png">
+                  <span>2026.4.5</span>
+                  <p>더마토리 패드는 종류 별로 사용해 봤는데 항상 만족해요.<br>레티날 탄력 앰플 패드는 늘어나는 패드 원단으로 간편하게 얼굴 팩하기도 좋고 목에 붙이기도 괜찮아요.</p>
+                  <img src="./img_detail/rev_text_img.jpg" alt="리뷰 제품 상세이미지01" class="rev_text_img">
+                  <label for="heart_num" class="heartnumber01"><img src="./img_detail/heart_g.png" class="heart_g"><img src="./img_detail/heart_g_f.png" class="heart_g_f"></label>
+                  <span>3</span>
+                </div>
+                <div class="line"></div>
+                <div class="rev_list_right">
+                  <p>강**</p>
+                  <div class="user_infor">
+                    <p>연령대</p>
+                    <p>피부타입</p>
+                    <p>피부고민</p>
+                  </div>
+                  <div class="user_infor">
+                    <p>20대</p>
+                    <p>복합성</p>
+                    <p>모공/피부결</p>
+                  </div>
+                </div>
+              </div><!--rev_list01-->
+              <div class="rev_list">
+                <div class="users">
+                  <p>이**</p>
+                  <span>연령대 20대 · 피부타입 지성</span>
+                </div>
+                <div class="rev_list_left">
+                  <img src="./img_detail/rev_star.png">
+                  <span>2026.3.22</span>
+                  <p>좋아서 한번 더 샀어요 여러모로 쓰기 좋아요 아침 화장 전에 저녁에 화장 지우고 이럴때 볼에 열감 내리기 좋아요.</p>
+                  <img src="./img_detail/rev_text_img02.jpg" alt="리뷰 제품 상세이미지01" class="rev_text_img">
+                  <label for="heart_num02" class="heartnumber02"><img src="./img_detail/heart_g.png" class="heart_g"><img src="./img_detail/heart_g_f.png" class="heart_g_f"></label>
+                  <span>2</span>
+                </div>
+                <div class="line"></div>
+                <div class="rev_list_right">
+                  <p>이**</p>
+                  <div class="user_infor">
+                    <p>연령대</p>
+                    <p>피부타입</p>
+                    <p>피부고민</p>
+                  </div>
+                  <div class="user_infor">
+                    <p>20대</p>
+                    <p>지성</p>
+                    <p>모공</p>
+                  </div>
+                </div>
+              </div><!--rev_list02-->
+              <div class="rev_list">
+                <div class="users">
+                  <p>정**</p>
+                  <span>연령대 20대 · 피부타입 민감성</span>
+                </div>
+                <div class="rev_list_left">
+                  <img src="./img_detail/rev_star.png">
+                  <span>2026.1.31</span>
+                  <p>진짜 이건 꾸준히 두세통정도는 써야지 효과 확실히 느낄 수 있고 저는 한 10분 정도 붙인 다음에 떼어내는데 모공이 점점 줄어들어서 탄력이 생기고 케어 마지막까지 바르면 피부 진짜 좋아보여요.</p>
+                  <img src="./img_detail/rev_text_img03.jpg" alt="리뷰 제품 상세이미지01" class="rev_text_img">
+                  <label for="heart_num03" class="heartnumber03"><img src="./img_detail/heart_g.png" class="heart_g"><img src="./img_detail/heart_g_f.png" class="heart_g_f"></label>
+                  <span>1</span>
+                </div>
+                <div class="line"></div>
+                <div class="rev_list_right">
+                  <p>정**</p>
+                  <div class="user_infor">
+                    <p>연령대</p>
+                    <p>피부타입</p>
+                    <p>피부고민</p>
+                  </div>
+                  <div class="user_infor">
+                    <p>20대</p>
+                    <p>민감성</p>
+                    <p>모공/트러블</p>
+                  </div>
+                </div>
+              </div><!--rev_list03-->
+            </div><!--rev_box-->
+            <div class="rev_number">
+              <img src="./img_detail/number_left.png" alt="">
+              <label for="num01" class="page01">1</label>
+              <label for="num02" class="page02">2</label>
+              <label for="num03" class="page03">3</label>
+              <label for="num04" class="page04">4</label>
+              <label for="num05" class="page05">5</label>
+              <img src="./img_detail/number_right.png" alt="">
+            </div>
+          </div><!--review-->
+        </div><!--review_box-->
+        <div class="notice_box" id="not">
+          <div class="infor_tab">
+            <div class="det_tab"><a href="#infor">상세정보</a></div>
+            <div class="rev_tab"><a href="#rev">리뷰 259</a></div>
+            <div class="deli_tab"><a href="#not">배송안내</a></div>
+          </div><!--infor_tab-->
+          <div class="notice">
+            <p>배송안내</p>
+            <div class="not_label_box">
+              <label for="notice_tab">배송안내
+                <img src="./img_detail/notice_tab.png" class="down">
+                <img src="./img_detail/notice_tab_f.png" class="up">
+              </label>
+              <div class="not_text_box">
+                <p class="del_title">배송정보</p>
+                <p>• 새벽배송 <span>기본 3,000원</span></p>
+                <p>평일 오후 8시까지 주문시 <span>내일 아침 8시전 수령</span> 3만원 이상 주문 시 무료 배송</p>
+                <p>• 일반배송 <span>기본 2,500원</span></p>
+                <p>주말과 공휴일 제외하고 <span>3일 이내 수령</span> 1만원 이상 주문 시 무료 배송</p>
+                <p class="del_title">배송지역</p>
+                <p>• 전국가능 (군부대 일부 지역은 제외), 제주도 및 도서산간 추가 비용 없음</p>
+                <p class="del_title">배송기간</p>
+                <p>• 입금 확인 후 2~4일 가량 소요되며, 지역별 택배업체 사정에 따라 약간의 차이가 있을 수 있습니다.</p>
+                <p>연휴/공휴일 포함 주문 또는 일부 도서지역/사서함 배송 주문은 2~3일 가량 추가 소요될 수 있습니다.</p>
+                <p class="del_title">배송비</p>
+                <p>• 할인 적용 후 최종 결제금액 20,000원 이상 구매시 무료배송</p>
+                <p>• 합산금액 20,000원 미만 주문시 배송비가 부과됩니다. (도서산간 지역 추가비용 없음)</p>
+                <p>• 일부 상품의 경우, 구매수량 단위로 배송비가 부과될 수 있습니다.</p>
+              </div><!--not_text_box-->
+              <label for="notice_tab02">반품/취소/교환/배송비 안내
+                <img src="./img_detail/notice_tab.png" class="down02">
+                <img src="./img_detail/notice_tab_f.png" class="up02">
+              </label>
+              <div class="not_text_box02">
+                <p class="del_title">교환/반품이 가능한 경우</p>
+                <p>• 단순 변심, 착오 구매에 따른 교환/반품은 상품을 공급받은 날부터 7일 이내에 가능합니다. (배송비 고객 부담)</p>
+                <p>• 단, 일부 제품의 경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환 및 반품이 불가능합니다. (상품 확인을 위하여 포장 훼손한 경우는 제외)</p>
+                <p>• 교환 및 반품 신청에는 사유에 따라 배송비 3,000~6,000원이 부과됩니다.</p>
+                <p>이 때 무료배송 혜택을 받은 주문일 경우 왕복 금액을, 배송비를 부담하신 경우 편도 금액을 산정하여 환불 금액에서 차감될 수 있습니다.</p>
+                <p>• 물품 하자에 의한 반송을 제외하고 고객변심에 의한 반품, 교환인 경우 배송비는 고객 부담이며(교환 시 6,000원 / 반품 시 3,000원),</p>
+                <p>접수 완료일로부터 평일 기준 2~3일 내에 수거가 이루어집니다.</p>
+                <p>• 반품 시, 상품대금 환불은 상품 회수 및 청약철회가 확정된 날로부터 3영업일 이내 진행되며,</p>
+                <p>기한을 초과한 경우 지연 기간에 대하여 「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 에서 정하는 이율을 곱하여 산정한 지연이자를 지급합니다.</p>
+                <p>• 주문취소 및 교환/반품은 [마이페이지 > 주문/배송조회] 또는 고객센터를 통해 신청하실 수 있습니다.</p>
+                <p class="del_title">교환/반품이 불가능한 경우</p>
+                <p>• 소비자에게 책임이 있는 사유로 재화등이 멸실되거나 훼손된 경우(재화의 내용을 확인하기 위하여 포장을 훼손한 경우는 제외)</p>
+                <p>• 시간이 지나 다시 판매하기 곤란할 정도로 재화등의 가치가 현저히 감소한 경우</p>
+                <p>• 소비자의 주문에 따라 개별적으로 생산되는 재화등 또는 이와 유사한 재화등에 대하여 청약철회등을 인정하는 경우</p>
+                <p>통신판매업자에게 회복할 수 없는 중대한 피해가 예상되는 경우로서 사전에 해당 거래에 대하여 별도로 그 사실을 고지하고 소비자의 서면(전자문서 포함)에 의한 동의를 받은 경우</p>
+                <p class="del_title">구매시 유의사항</p>
+                <p>• 주문한 상품의 단종 또는 생산지연으로 부득이하게 공급될 수 없는 경우, SMS 안내와 함께 자동 주문취소 및 환불 처리가 진행될 수 있습니다.</p>
+                <p>• 상품 교환/반품 시에는 고객상담실(000-000-0000)로 문의하신 후 보내주셔야 원활히 처리됩니다.</p>
+                <p>• 반품시 증정사은품까지 함께 동봉하여 보내주셔야 합니다.</p>
+                <p>• 구매자가 미성년자인 경우에는 상품 구입 시 법정대리인이 동의하지 아니하면 미성년자 본인 또는 법정대리인이 구매 취소할 수 있습니다.</p>
+              </div><!--not_text_box-->
+            </div>
+          </div><!--notice-->
+        </div>
+      </div>
+    </div><!--information-->
+    <div class="pay_tab_box">
+      <div class="pay_box">
+        <div class="pay_left">
+          <p>[모공탄력] 레티날 탄력 앰플패드 리필 기획</p>
+          <span>35%</span>
+          <span>25,300원</span>
+          <span>39,000원</span>
+        </div>
+        <div class="pay_right">
+          <div class="btn_box">
+            <div class="shop_btn"><a href="#!">장바구니</a></div>
+            <div class="pay_btn"><a href="#!">구매하기</a></div>
+          </div>          
+        </div><!--pay_right-->
+      </div><!--pay_box-->
+    </div><!--pay_tab_box-->
+  </div>
+  <footer class="footer">
+    <div class="footer_box">
+      <div class="footer_left">
+        <div class="footer_logo"><img src="../images/footer_logo.png" alt="푸터 로고 이미지"></div>
+        <p>부산광역시 부산진구 중앙대로 688    |    사업자 등록번호 : 123-45-67890</p>
+        <p>전화번호 : 123-4567-8910    |    이메일 : abcd1234@gmail.com</p>
+      </div>
+      <div class="footer_right">
+        <div class="sns">
+          <div class="kakao"><a href="#!"><img src="../images/f_kakao.png" alt="카카오톡 아이콘"></a></div>
+          <div class="instagram"><a href="#!"><img src="../images/f_insta.png" alt="인스타 아이콘"></a></div>
+          <div class="tube"><a href="#!"><img src="../images/f_youtube.png" alt="유튜브 아이콘"></a></div>
+        </div>
+        <div class="text">
+          <span class="call"><img src="../images/call.png" alt="전화 아이콘"></span>
+          <span>123-456-7890</span>
+        </div>
+        <p>주말,공휴일 휴무</p>
+        <p>상담시간 10:00 ~ 18:00 (점심 12:00~13:00)</p>
+      </div>
+    </div>
+  </footer><!--footer-->
+  <aside class="btn">
+    <div class="history"><a href="./history.html"><img src="../images/history_icon.png" alt="최근본상품 아이콘"></a></div>
+    <div class="top"><a href="#top"><img src="../images/top_btn.png" alt="탑버튼 아이콘"></a></div>
+  </aside>
+</body>
+</html>

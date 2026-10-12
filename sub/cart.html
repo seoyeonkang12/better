@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better</title>
+  <link rel="shortcut icon" href="../images/better_favicon.png" type="image/x-icon">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="../css/header.js"></script>
+  <script src="./css/cart.js"></script>
+  <link rel="stylesheet" href="./css/cart.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Fugaz+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {margin: 0; padding: 0;}
+    li {list-style: none;}
+    a {color: black; text-decoration: none;}
+    
+  </style>
+</head>
+<body>
+  <div class="fix">
+    <input type="checkbox" id="banner_close">
+    <div class="top_banner">신규 회원 가입 시 10,000원 쿠폰팩 증정
+    </div><!--top_banner-->
+
+    <header class="header_outer">
+      <div class="header">
+        <div class="logo_gnb">
+          <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="브랜드 로고 이미지"></a></div>
+          <ul class="gnb">
+            <li class="gnb_menu01"><a href="#!">Product</a></li>
+            <li><a href="#!">For You</a></li>
+            <li><a href="#!">Event</a></li>
+            <li><a href="#!">Best</a></li>
+            <li><a href="#!">Review</a></li>
+            <li><a href="#!">Brand</a></li>
+          </ul>
+        </div>
+        <div class="back"><a href="../index.html"><img src="../images/header_arrow.png" alt="arrow_img"></a></div>
+        <div class="title">장바구니</div>
+        <div class="header_right">
+          <div class="search">
+            <p>롬앤 베러 댄 치크 #글레이즈</p>
+            <img src="../images/search_icon.png" alt="검색 아이콘">
+          </div>
+          <div class="search_mobile">
+            <img src="../images/search_mobile.png" alt="검색 아이콘">
+          </div>
+          <div class="user"><a href="../login/login.html">
+            <div class="user_img"></div>
+            <div class="join_event_box">
+              <div class="join_event"><a href="#!">회원가입 특별혜택</a></div>
+            </div></a>
+          </div>
+          <div class="shopping"><a href="./cart.html"></a></div>
+        </div><!--header_right-->   
+      </div>
+      <div class="gnb_down_menu">
+        <div class="down_menu_box">
+          <div class="gnb_title">
+            <div class="on_tab">스킨케어</div>
+            <div>메이크업</div>
+          </div>
+          <div class="menu_list_box">
+            <div class="menu_list on_sheet">
+              <div class="type_list">
+                <ul class="type"><a href="#!">유형별</a>
+                  <li><a href="#!">토너</a></li>
+                  <li><a href="#!">세럼/앰플</a></li>
+                  <li><a href="#!">로션/크림</a></li>
+                  <li><a href="#!">마스크팩</a></li>
+                  <li><a href="#!">클렌징/스크럽</a></li>
+                  <li><a href="#!">선케어</a></li>
+                </ul>
+                <ul class="worry"><a href="./sub.html">피부고민별</a>
+                  <li><a href="./sub.html">모공/피부결</a></li>
+                  <li><a href="#!">민감/진정</a></li>
+                  <li><a href="#!">수분/보습</a></li>
+                  <li><a href="#!">트러블/피지</a></li>
+                  <li><a href="#!">주름/탄력</a></li>
+                  <li><a href="#!">잡티/톤</a></li>
+                </ul>
+                <ul class="skintype"><a href="#!">피부타입별</a>
+                  <li><a href="#!">지성</a></li>
+                  <li><a href="#!">건성</a></li>
+                  <li><a href="#!">복합성</a></li>
+                  <li><a href="#!">민감피부</a></li>
+                </ul>
+              </div>
+              <div class="today_product">
+                <div class="today_img before01"><a href="#!"><img src="../images/menu_01.jpg" alt="이달의 상품 이미지"></a></div>
+                <div class="today_text">
+                  <span>#딥클렌징 #수분케어</span>
+                  <a href="#!"><p>원더 살구씨 딥 클렌징 오일</p></a>
+                  <span>20%</span>
+                  <span>12,000원</span>
+                  <span>15,000원</span>
+                </div>
+              </div><!--today_product-->
+            </div><!--menu_list-->
+            <div class="menu_list">
+              <div class="type_list">
+                <ul class="makeup_type"><a href="#!">유형별</a>
+                  <li><a href="#!">페이스</a></li>
+                  <li><a href="#!">립</a></li>
+                  <li><a href="#!">아이</a></li>
+                  <li><a href="#!">메이크업 소품</a></li>
+                </ul>
+                <ul class="persunal_type"><a href="#!">퍼스널 컬러별</a>
+                  <li><a href="#!">봄웜톤</a></li>
+                  <li><a href="#!">여름쿨톤</a></li>
+                  <li><a href="#!">가을웜톤</a></li>
+                  <li><a href="#!">겨울쿨톤</a></li>
+                </ul>
+                <ul class="colortype"><a href="#!">컬러별</a>
+                  <li><a href="#!">레드</a></li>
+                  <li><a href="#!">핑크</a></li>
+                  <li><a href="#!">라벤더</a></li>
+                  <li><a href="#!">브라운</a></li>
+                </ul>
+              </div>
+              <div class="today_product">
+                <div class="today_img before02"><a href="#!"><img src="../images/menu_02.jpg" alt="이달의 상품 이미지"></a></div>
+                <div class="today_text">
+                  <span>#데일리컬러 #소프트톤</span>
+                  <a href="#!"><p>[NEW/소프트부케컬렉션] 에센셜 블러쉬 탭</p></a>
+                  <span>25%</span>
+                  <span>13,500원</span>
+                  <span>18,000원</span>
+                </div>
+              </div><!--today_product-->
+            </div><!--menu_list02-->
+          </div>
+        </div>
+      </div><!--gnb_down_menu-->
+      <div class="search_popup">
+        <div class="search_popup_box">
+          <div class="popup_title">
+            <span>검색</span>
+            <div class="searchX"></div>
+          </div>
+          <div class="popup_search">
+            <input type="search" placeholder="롬앤 베러 댄 치크 #글레이즈">
+            <img src="../images/search_icon.png" alt="검색 아이콘">
+          </div>
+          <div class="popular">
+            <p>인기검색어</p>
+            <div class="popular_cir">
+              <div><a href="#!">워터 블러링 레이어 틴트</a></div>
+              <div><a href="#!">플레르 틴트</a></div>
+              <div><a href="#!">어센틱 립밤</a></div>
+              <div><a href="#!">레티날 앰플패드</a></div>
+              <div><a href="#!">소프트 블러링 아이팔레트</a></div>
+              <div><a href="#!">비건 앰플</a></div>
+              <div><a href="#!">무드 글로이 틴트</a></div>
+              <div><a href="#!">클리어 수딩 토너</a></div>
+              <div><a href="#!">진정 거즈패드</a></div>
+            </div>
+          </div><!--popular-->
+          <div class="popular_product"><p>인기 있는 상품</p>
+            <div class="popular_list">
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_01.jpg" alt="인기 있는 상품 이미지01"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>나이아신아마이드 10 TXA 4 다크 스팟 코렉팅 세럼</p></a>
+                  <p class="p_price">32,000원</p>
+                  <span>23,000원</span>
+                  <span>28%</span>
+                </div>
+              </div><!--p_list01-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_02.jpg" alt="인기 있는 상품 이미지02"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>멜팅 블러 립 팟 5g</p></a>
+                  <p class="p_price">14,000원</p>
+                  <span>9,800원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list02-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_03.jpg" alt="인기 있는 상품 이미지03"></a></div>
+                <div class="popular_text">
+                    <a href="#!"><p>촉촉 코팅 베르 컬러 글로스[2EA]</p></a>
+                  <p class="p_price">24,000원</p>
+                  <span>19,200원</span>
+                  <span>20%</span>
+                </div>
+              </div><!--p_list03-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_04.jpg" alt="인기 있는 상품 이미지04"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>[NEW 컬러]볼륨메이트 블러틴트/글로스</p></a>
+                  <p class="p_price">18,000원</p>
+                  <span>12,600원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list04-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_05.jpg" alt="인기 있는 상품 이미지05"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>[NEW컬러] 벨벳 립펜슬 기획</p></a>
+                  <p class="p_price">14,000원</p>
+                  <span>9,800원</span>
+                  <span>30%</span>
+                </div>
+              </div><!--p_list05-->
+              <div class="p_list">
+                <div class="popular_img"><a href="#!"><img src="../images/search_06.jpg" alt="인기 있는 상품 이미지06"></a></div>
+                <div class="popular_text">
+                  <a href="#!"><p>청귤 비타C 나이아신아마이드 10 흔적앰플 30ml</p></a>
+                  <p class="p_price">32,000원</p>
+                  <span>24,000원</span>
+                  <span>25%</span>
+                </div>
+              </div><!--p_list06-->
+            </div><!--popular_list-->
+          </div>
+        </div>
+      </div><!--search_popup-->
+    </header>
+  </div>
+  <div class="tab_bar">
+    <ul>
+      <li class="menu_btn">
+        <img src="../images/bar_menu.png" alt="menu_icon">
+        <p>카테고리</p>
+      </li>
+      <li class="bar_search">
+        <img src="../images/bar_search.png" alt="menu_icon">
+        <p>검색</p>
+      </li>
+      <li class="home"><a href="../index.html">
+        <img src="../images/bar_home.png" alt="menu_icon">
+        <p>홈</p></a>
+      </li>
+      <li><a href="#!">
+        <img src="../images/bar_shopping.png" alt="menu_icon">
+        <p>장바구니</p></a>
+      </li>
+      <li><a href="../login/login.html">
+        <img src="../images/bar_user.png" alt="menu_icon">
+        <p>마이</p></a>
+      </li>
+    </ul>
+  </div>
+  <div class="gnb_mobile">
+    <div class="searchX"><img src="../images/delete_b.png" alt="delete"></div>
+    <div class="join_txt">
+      <a href="../login/login.html">로그인/회원가입
+      <p>지금 회원가입하고 풍성한 혜택 받아가세요!</p></a>
+    </div>
+    <ul>
+      <li>
+        <button type="button" class="btn_product">Product
+          <img src="../images/arrow_bot.png" alt="arrow_bot_img" class="arrow">
+        </button>
+        <ul class="sub_menu">
+          <li class="skincare">
+            <button type="button" class="btn_skincare">스킨케어
+              <span></span>
+            </button>
+            <div class="detail_menu">
+              <div>
+                <p>유형별</p>
+                <div class="txt">
+                  <a href="#!">토너</a>
+                  <a href="#!">세럼/앰플</a>
+                  <a href="#!">로션/크림</a>
+                  <a href="#!">마스크팩</a>
+                  <a href="#!">클렌징/스크럽</a>
+                  <a href="#!">선케어</a>
+                </div>
+              </div>
+              <div class="sub">
+                <p>피부고민별</p>
+                <div class="txt">
+                  <a href="./sub.html">모공/피부결</a>
+                  <a href="#!">민감/진정</a>
+                  <a href="#!">수분/보습</a>
+                  <a href="#!">트러블/피지</a>
+                  <a href="#!">주름/탄력</a>
+                  <a href="#!">잡티/톤</a>
+                </div>
+              </div>
+              <div>
+                <p>피부타입별</p>
+                <div class="txt">
+                  <a href="#!">지성</a>
+                  <a href="#!">건성</a>
+                  <a href="#!">복합성</a>
+                  <a href="#!">민감피부</a>
+                </div>
+              </div>
+            </div>
+          </li><!--skincare-->
+          <li class="makeup">
+            <button type="button" class="btn_makeup">메이크업
+              <span></span>
+            </button>
+            <div class="detail_menu">
+              <div>
+                <p>유형별</p>
+                <div class="txt">
+                  <a href="#!">페이스</a>
+                  <a href="#!">립</a>
+                  <a href="#!">아이</a>
+                  <a href="#!">메이크업 소품</a>
+                </div>
+              </div>
+              <div>퍼스널 컬러별</p>
+                <div class="txt">
+                  <a href="#!">봄웜톤</a>
+                  <a href="#!">여름쿨톤</a>
+                  <a href="#!">가을웜톤</a>
+                  <a href="#!">겨울쿨톤</a>
+                </div>
+              </div>
+              <div>
+                <p>컬러별</p>
+                <div class="txt">
+                  <a href="#!">레드</a>
+                  <a href="#!">핑크</a>
+                  <a href="#!">라벤더</a>
+                  <a href="#!">브라운</a>
+                </div>
+              </div>
+            </div>
+          </li><!--makeup-->
+        </ul><!--sub_menu-->
+      </li><!--product-->
+      <li><a href="#!">For You</a></li>
+      <li><a href="#!">Event</a></li>
+      <li><a href="#!">Best</a></li>
+      <li><a href="#!">Review</a></li>
+      <li><a href="#!">Brand</a></li>
+    </ul>
+  </div>
+
+  <input type="checkbox" id="list_delete">
+  
+  <div class="all">
+    <div class="cart_box">
+      <div class="title">장바구니</div>
+      <div class="cart_list">
+        <div class="cart_left">
+          <input type="checkbox" id="all_chk">
+          <label for="all_chk">전체선택</label>
+          <span class="delete">선택삭제</span>
+          <div class="list_box">
+            <div class="list_left">
+              <input type="checkbox" id="chk_list" class="chk_list">
+              <div class="list_img"><a href="#!"><img src="./img_detail/history_01.jpg" alt="제품 이미지01"></a></div>
+              <div class="list_text">
+                <a href="#!"><p>레티놀 시카 흔적 앰플</p></a>
+                <p>[흔적 앰플 30mL]</p>
+                <div class="count">
+                    <button class="min">ㅡ</button>
+                    <span class="count_num">1</span>
+                    <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="list_right">
+              <span>30,000원</span>
+              <label for="list_delete" class="list_del"><img src="./img_detail/delete_b.png"></label>
+            </div>
+          </div><!--list_box01-->
+          <div class="list_box second" id="list_box">
+            <div class="list_left">
+              <input type="checkbox" id="chk_list" class="chk_list">
+              <div class="list_img"><a href="./detail.html"><img src="./img_detail/history_02.jpg" alt="제품 이미지02"></a></div>
+              <div class="list_text">
+                <a href="./detail.html"><p>[모공탄력] 레티날 탄력 앰플패드 리필 기획</p></a>
+                <p>[80매 더블기획]</p>
+                <div class="count">
+                    <button class="min02">ㅡ</button>
+                    <span class="count_num02">1</span>
+                    <button class="add02">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="list_right">
+              <span>25,300원</span>
+              <label for="list_delete" class="list_del"><img src="./img_detail/delete_b.png"></label>
+            </div>
+          </div><!--list_box02-->
+        </div><!--cart_left-->
+        <div class="cart_right">
+          <p>결제 내역</p>
+          <div class="pay01">
+            <span>총 상품금액</span>
+            <span>25,300원</span>
+          </div>
+          <div class="pay02">
+            <span>총 배송비</span>
+            <span>0원</span>
+          </div>
+          <div class="total">
+            <span>총 결제금액</span>
+            <span>25,300원</span>
+          </div>
+          <div class="order_btn">
+            <div class="all_order"><a href="#!">전체상품주문</a></div>
+            <div class="cho_order"><a href="#!">선택상품주문</a></div>
+          </div>
+        </div>
+      </div><!--cart_list-->
+    </div><!--cart_box-->
+    <div class="infor_box">
+      <div class="title">이용안내</div>
+      <div class="infor">
+        <p>장바구니 이용안내</p>
+        <div class="infor_list">
+          <p>• 15,000원 이상 구매시 무료배송입니다.</p>
+          <p>• 천재지변(폭설·폭우 등), 택배사 파업 등 불가항력적 상황 시 배송 지연 발생할 수 있습니다.</p>
+          <p>• 택배사 사정 및 연휴·공휴일·도서지역·사서함 등 특수 배송지의 경우 2~3일 추가 지연이 가능합니다.</p>
+          <p>• 일부 상품은 구매수량 단위로 배송비 부과될 수 있습니다.</p>
+          <p>• 최종 결제 금액은 주문서 내 고객님의 쿠폰/할인 적용에 따라 달라집니다.</p>
+          <p>• 장바구니에 담긴 상품은 일정 기간이 지나면 자동으로 삭제될 수 있습니다. 구매를 원하시는 상품은 빠른 시일 내에 주문해주세요.</p>
+          <p>• 본 쇼핑몰은 전자상거래 등에서의 소비자보호에 관한 법률과 개인정보 보호법을 준수합니다.</p>
+        </div>
+      </div>
+    </div><!--infor_box-->
+  </div>
+  <footer class="footer">
+    <div class="footer_box">
+      <div class="footer_left">
+        <div class="footer_logo"><img src="../images/footer_logo.png" alt="푸터 로고 이미지"></div>
+        <p>부산광역시 부산진구 중앙대로 688    |    사업자 등록번호 : 123-45-67890</p>
+        <p>전화번호 : 123-4567-8910    |    이메일 : abcd1234@gmail.com</p>
+      </div>
+      <div class="footer_right">
+        <div class="sns">
+          <div class="kakao"><a href="#!"><img src="../images/f_kakao.png" alt="카카오톡 아이콘"></a></div>
+          <div class="instagram"><a href="#!"><img src="../images/f_insta.png" alt="인스타 아이콘"></a></div>
+          <div class="tube"><a href="#!"><img src="../images/f_youtube.png" alt="유튜브 아이콘"></a></div>
+        </div>
+        <div class="text">
+          <span class="call"><img src="../images/call.png" alt="전화 아이콘"></span>
+          <span>123-456-7890</span>
+        </div>
+        <p>주말,공휴일 휴무</p>
+        <p>상담시간 10:00 ~ 18:00 (점심 12:00~13:00)</p>
+      </div>
+    </div>
+  </footer><!--footer-->
+  <aside class="btn">
+    <div class="history"><a href="./history.html"><img src="../images/history_icon.png" alt="최근본상품 아이콘"></a></div>
+    <div class="top"><a href="#top"><img src="../images/top_btn.png" alt="탑버튼 아이콘"></a></div>
+  </aside>
+</body>
+</html>
