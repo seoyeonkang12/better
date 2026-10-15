@@ -293,10 +293,10 @@ document.addEventListener('DOMContentLoaded',function(){
     });
 
     wrap.addEventListener('scroll', () => {
-      const maxScroll = wrap.acrollWidth = wrap.clientWidth;
+      const maxScroll = wrap.scrollWidth = wrap.clientWidth;
       const percent = 
         maxScroll > 0 ? wrap.scrollLeft /
-        maxScroll : 0;
+        maxScroll : 1;
       bar.style.width = percent * 100 + '%';
     });
     // video_slide_bar
