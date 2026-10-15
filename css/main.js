@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded',function(){
       const maxScroll = wrap.scrollWidth = wrap.clientWidth;
       const percent = 
         maxScroll > 0 ? wrap.scrollLeft /
-        maxScroll : 1;
+        maxScroll : 0;
       bar.style.width = percent * 100 + '%';
     });
     // video_slide_bar
