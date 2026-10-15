@@ -1,4 +1,4 @@
-<img width="1902" height="642" alt="image" src="https://github.com/user-attachments/assets/b24298a5-f42d-4344-a57e-1f64c6256fad" /># 💄 Better — 화장품 쇼핑몰
+# 💄 Better — 화장품 쇼핑몰
 
 > **나에게 맞는 뷰티를 발견하다**
 > 
