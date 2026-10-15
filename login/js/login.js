@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
       alert('주문 조회');
       location.href = '../index.html';
     } else {
-        lert('유효한 주문 번호가  아닙니다. 다시 입력해 주세요.');
+      alert('유효한 주문 번호가  아닙니다. 다시 입력해 주세요.');
       }
   }); //name_number_numberPw
 
