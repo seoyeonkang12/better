@@ -5,7 +5,7 @@ $(function(){
     slidesPerView: 'auto',
     slideWidth: 1220,
     spaceBetween: 10,
-    intialSlide: 1,
+    initialSlide: 1,
     centeredSlides: true,
     speed: 1500,
     autoplay: {
