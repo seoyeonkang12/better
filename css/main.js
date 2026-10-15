@@ -61,17 +61,16 @@ $(function(){
     });
 
     $('.best_sellers .best_next').click(function(){
-        cont activeBox = $('.best_sellers .on_sheet .slide_box');
-      // let move;
-      // if($(window).width() <= 601){
-      //   let slideWidth = $('.slide').outerWidth();
-      //   let gap = parseFloat($('.slide').parent().css('gap'));
-      //   move = slideWidth + gap;
-      // } else {
-      //   move = 1305;
-      // }
-      bestslideBox.stop.animate({
-        scrollLeft: activeBox.scrollLeft() + 1305
+      let move;
+      if($(window).width() <= 601){
+        let slideWidth = $('.slide').outerWidth();
+        let gap = parseFloat($('.slide').parent().css('gap'));
+        move = slideWidth + gap;
+      } else {
+        move = 1305;
+      }
+      bestslideBox.animate({
+        scrollLeft: bestslideBox.scrollLeft() + move
       }, 400);
     });
     $('.best_sellers .best_prev').click(function(){
