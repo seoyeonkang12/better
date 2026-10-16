@@ -12,13 +12,11 @@
 Better는 피부 고민과 퍼스널 컬러 등 다양한 기준으로 상품을 탐색할 수 있도록 기획한 화장품 쇼핑몰 프로젝트입니다.  
 상품 정보와 할인 혜택을 직관적으로 전달하고, 상품 상세정보부터 리뷰와 배송 안내까지 자연스럽게 탐색할 수 있도록 UI를 구성했습니다.
 
-- **프로젝트명 :** Better
-- **작업 형태 :** 개인 프로젝트
+- **프로젝트 유형 :** 개인 프로젝트
 - **개발 기간 :** 2026.05 ~ 2026.06 (약 2주)
 - **담당 역할 :** 기획, UI 디자인, 퍼블리싱, 인터랙션 구현
-- **작업 환경 :** PC 및 모바일 적응형 화면
-- **주요 기술 :** HTML5, CSS, JavaScript, jQuery
-- **사용 라이브러리 :** Swiper, bxSlider
+- **작업 환경 :** PC · 모바일 적응형 웹
+- **주요 기술 :** HTML5, CSS3, JavaScript, jQuery
 
 ## 🛠️ 기술 스택
 
@@ -27,7 +25,7 @@ Better는 피부 고민과 퍼스널 컬러 등 다양한 기준으로 상품을
 - **Interaction :** JavaScript, jQuery
 - **Slider :** Swiper, bxSlider
 - **Data :** JSON
-- **Browser Storage :** localStorage
+- **Storage :** localStorage
 
 ## 🎯 프로젝트 목표
 
@@ -39,83 +37,185 @@ Better는 피부 고민과 퍼스널 컬러 등 다양한 기준으로 상품을
 
 ### 1. 메인 페이지
 
-- 베스트 상품 슬라이드
-- 컬러별 상품 슬라이드
-- 가로 스크롤 상품 영역과 진행률 표시 바
+- 베스트 상품 및 컬러별 상품 슬라이더 구현
+- 가로 스크롤을 활용한 상품 목록 구성
+- 스크롤 위치에 따른 진행 바 표시
 
 <!-- 메인 페이지 GIF 삽입 -->
 
 ### 2. 상품 상세 페이지
 
-- 상품 수량 변경 및 총 가격 계산
-- 상품 상세정보, 리뷰, 배송 안내 탭 전환
+- 상품 수량 변경 및 최소·최대 구매 수량 제한
+- 상품 상세정보, 리뷰, 배송 안내 탭 구현
 
 <!-- 상품 상세 페이지 GIF 삽입 -->
 
 ### 3. 로그인 및 회원가입
 
-- 아이디 저장 기능
-- 약관별 체크박스 및 전체 동의 연동
-
+- JSON 데이터를 활용한 사용자 정보 확인
+- 아이디 저장 기능 구현
+- 전체 동의 및 개별 동의 체크박스 연동
+  
 <!-- 로그인 및 회원가입 GIF 삽입 -->
 
-## 💻 주요 구현 내용
+## 💻 핵심 코드 구현
 
 ### 1. 가로 스크롤 및 진행률 표시
 
-**구현 의도**
-
 가로 스크롤 콘텐츠에서 사용자의 현재 탐색 위치를 직관적으로 확인할 수 있도록 진행률 표시 기능을 구현했습니다.  
 
-**핵심 로직**
+**💡 셀프 코드 리뷰**
 
-- `scrollWidth`, `clientWidth`로 전체 스크롤 가능 거리 계산
+- `scrollWidth`와 `clientWidth`로 전체 스크롤 가능 거리 계산
 - `scrollLeft`를 활용해 현재 스크롤 위치 확인
-- 전체 거리 대비 현재 위치의 비율을 계산해 진행률 바의 width 갱신
+- 전체 거리 대비 현재 위치의 비율 계산 및 진행률 바 갱신
 
-전체 콘텐츠 너비만 사용하는 대신 화면에 표시되는 영역을 제외해 계산함으로써, 실제 스크롤 가능한 거리에 맞춰 진행률을 표시하도록 구현했습니다.
+~~~javascript
+$(window).on('mousemove', function(e) {
+  if (!isDrag || !currentSheet) return;
 
-<img width="434" height="162" alt="image" src="https://github.com/user-attachments/assets/bd205262-859e-4cc0-8c57-23d50fcc29e2" />
+  const moveX = e.pageX - startX;
+  currentSheet.scrollLeft(startScroll - moveX);
+  updateBar(currentSheet);
+});
+~~~
+~~~javascript
+function updateBar(sheet) {
+  const maxScroll = sheet[0].scrollWidth - sheet[0].clientWidth;
 
-**해결 결과**
+  if (maxScroll <= 0) {
+    bar.css('width', '100%');
+    return;
+  }
 
-스크롤 위치에 따라 진행률 바가 실시간으로 변경되어 콘텐츠 탐색 위치를 직관적으로 확인할 수 있도록 개선하였습니다.
+  const percent = sheet.scrollLeft() / maxScroll * 100;
+  bar.css('width', percent + '%');
+}
+~~~
 
-### 2. 상품 상세 페이지 수량 및 금액 연동
+### 2. 상품 수량 제어
 
-**구현 의도**
+상품 구매 수량이 최소 1개, 최대 10개로 제한되도록 구현하고, 제한에 도달하면 안내 메시지가 표시되도록 구성했습니다.
 
-상품 수량 변경에 따라 총 상품 금액을 즉시 확인할 수 있도록 수량과 금액 연동 기능을 구현했습니다.
+**💡 셀프 코드 리뷰**
 
-**핵심 로직**
+- 수량 증가·감소에 따른 최소·최대 구매 가능 수량 검사
+- 최대 10개 초과 및 최소 1개 미만 시 수량 보정
+- 구매 수량 제한에 따른 안내 메시지 표시
 
-- 수량 변경 이벤트를 통해 현재 선택 수량 확인
-- 상품 가격과 수량을 곱해 총 금액 계산
-- `textContent`로 계산 결과를 화면에 반영
+~~~javascript
+let cnt = 1;
 
-<img width="434" height="162" alt="image" src="https://github.com/user-attachments/assets/bd205262-859e-4cc0-8c57-23d50fcc29e2" />
+$('.add').click(function(){
+  cnt++;
 
-**해결 결과**
+  if(cnt>10){
+    cnt = 10;
+    alert('최대 10개까지만 구매 가능합니다.');
+  }
 
-수량 변경에 따라 총 상품 금액이 자동으로 갱신되어 구매 전 예상 금액을 즉시 확인할 수 있도록 개선하였습니다.
+  $('.count_num').text(cnt);
+});
 
-### 3. 로그인 및 회원가입 데이터 처리
+$('.min').click(function(){
+  cnt--;
 
-**구현 의도**
+  if(cnt<1){
+    cnt = 1;
+    alert('1개 이상부터 구매 가능합니다.');
+  }
 
-아이디 재입력의 번거로움을 줄이고, 사용자 데이터 확인 및 약관 동의 과정을 편리하게 관리하기 위한 기능 구현.
+  $('.count_num').text(cnt);
+}); //count_event
+~~~
 
-**핵심 로직**
+### 3. 로그인 및 약관 동의 처리
 
-- `fetch()`로 JSON 데이터 호출
-- `find()`로 입력 정보와 일치하는 사용자 데이터 탐색
-- `localStorage`로 아이디 저장 및 불러오기 처리
-- 체크박스 이벤트를 활용해 전체 동의와 개별 동의 상태 연동
+JSON 데이터를 활용해 사용자 정보를 확인하고, 아이디 저장과 약관 동의 기능을 통해 로그인 및 회원가입 과정을 편리하게 이용할 수 있도록 구성했습니다.
 
-**해결 결과**
+**💡 셀프 코드 리뷰**
 
-JSON 기반 사용자 데이터 탐색과 아이디 저장 기능을 구현하고, 약관 동의 상태를 연동해 로그인 및 회원가입 과정의 편의성 개선.
+- `fetch()`를 활용한 JSON 회원 데이터 호출
+- `find()`로 입력 정보와 일치하는 사용자 탐색
+- `localStorage`를 활용한 아이디 저장 및 불러오기
+- 전체·개별 약관 체크박스 간 상태 연동
+- 필수 약관 동의 여부 및 페이지 이동 처리
 
+<details>
+  <summary>Login.js</summary>
+  
+~~~javascript
+const saveId = localStorage.getItem('saveId');
+
+if(saveId) {
+  userId.value = saveId;
+  idSave.checked = true;
+}
+
+const user = users.find(function(user) {
+  return user.id === userId.value &&
+  user.pw === userPw.value;
+});
+
+if(user){
+  if(idSave.checked){
+      localStorage.setItem('saveId', userId.value);
+  } else {
+      localStorage.removeItem('saveId');
+  }
+
+  alert('로그인되었습니다.');
+  location.href = '../index.html';
+} else {
+  alert('아이디 또는 비밀번호가 일치하지 않습니다.');
+}
+//login_pw
+~~~
+</details>
+
+<details>
+  <summary>agreement.js</summary>
+  
+~~~javascript
+function totalCheck() {
+  if(totalTerms.checked) {
+    termsEls.forEach((termsEl) => {
+      termsEl.checked = true;
+    });
+  } else{
+    termsEls.forEach((termsEl) => {
+      termsEl.checked = false;
+    });
+  }
+} //totalCheck
+
+function termsCheck() {
+  if(terms01.checked === true && terms02.checked === true && terms03.checked === true){
+    totalTerms.checked = true;
+  } else {
+    totalTerms.checked = false;
+  }
+} //termsCheck()
+~~~
+~~~javascript
+nextBtn.addEventListener('click', function(){
+  let allChecked = true;
+
+  requiredTerms.forEach(function(term) {
+    if(!term.checked){
+      allChecked = false;
+    }
+  });
+
+  if(!allChecked){
+    alert('필수 약관을 모두 동의해주세요.');
+    return;
+  }
+
+  location.href = './join.html';
+}); //terms_required
+~~~
+</details>
 
 ## 📂 프로젝트 폴더 구조
 
@@ -155,7 +255,5 @@ better/
 
 이번 프로젝트를 통해 정적인 화면 구현을 넘어 JavaScript와 jQuery를 활용한 사용자 인터랙션 및 데이터 처리 경험을 쌓았습니다.
 
-fetch(), find(), localStorage를 활용하며 데이터 탐색과 브라우저 저장 방식에 대한 이해를 넓혔고, 사용자 동작에 따라 화면이 갱신되는 흐름을 익혔습니다.
-
-앞으로는 예외 상황 처리와 코드 재사용성을 개선하고, 유지보수가 쉬운 구조를 설계하는 역량을 키워 더 나은 개발자로 성장하겠습니다.
-앞으로는 공통 기능의 재사용성을 높이고 반응형 레이아웃과 접근성을 고려해 유지보수하기 좋은 웹사이트를 구현할 수 있도록 개발 역량을 키워 나가겠습니다.
+`fetch()`, `find()`, `localStorage`를 활용하며 데이터 탐색과 브라우저 저장 방식에 대한 이해를 넓혔습니다.  
+앞으로는 공통 기능의 재사용성을 높이고 반응형 레이아웃과 웹 접근성을 고려해 유지보수하기 좋은 웹사이트를 구현할 수 있도록 개발 역량을 키워 나가겠습니다.
