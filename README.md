@@ -142,7 +142,7 @@ JSON 데이터를 활용해 사용자 정보를 확인하고, 아이디 저장�
 - 필수 약관 동의 여부 및 페이지 이동 처리
 
 <details>
-  <summary>Login.js</summary>
+  <summary>login.js</summary>
   
 ~~~javascript
 const saveId = localStorage.getItem('saveId');
